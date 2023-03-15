@@ -3,7 +3,6 @@
 *.pot
 *.pyc
 __pycache__
-db.sqlite3
 .env 
 .venv 
 env/ 
@@ -15,6 +14,3 @@ venv.bak/
 .DS_Store
 virtual/
 media/
-**/migrations/**
-!**/migrations
-!**/migrations/__init__.py
