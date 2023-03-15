@@ -26,7 +26,7 @@ const UploadPost = () => {
     var myHeaders = new Headers();
     myHeaders.append(
       'Authorization',
-      'Token da5da01f5bbc29eb4ba0a84b21a580c3ede8147a',
+      'Token 05fc1a3f496cac72aecc244ac6fe088d1243cb44',
     );
     myHeaders.append(
       'Cookie',
@@ -40,7 +40,7 @@ const UploadPost = () => {
       redirect: 'follow',
     };
 
-    fetch('https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/api/posts/', requestOptions)
+    fetch('https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/api/posts/', requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));

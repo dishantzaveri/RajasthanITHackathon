@@ -25,7 +25,7 @@ export default function Charts() {
             redirect: 'follow'
         };
 
-        fetch("https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/news/Top25Fundedcompanybargraphapi/", requestOptions)
+        fetch("https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/news/Top25Fundedcompanybargraphapi/", requestOptions)
             .then(response => response.text())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
@@ -41,7 +41,7 @@ export default function Charts() {
             redirect: 'follow'
         };
 
-        fetch("https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/news/Fundingperregionbargraphapi/", requestOptions)
+        fetch("https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/news/Fundingperregionbargraphapi/", requestOptions)
             .then(response => response.text())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));

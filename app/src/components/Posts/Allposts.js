@@ -49,9 +49,9 @@ export default function AllPosts({navigation}) {
 
     var config = {
       method: 'get',
-      url: 'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/api/posts/',
+      url: 'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/api/posts/',
       headers: {
-        Authorization: 'Token da5da01f5bbc29eb4ba0a84b21a580c3ede8147a',
+        Authorization: 'Token 05fc1a3f496cac72aecc244ac6fe088d1243cb44',
         Cookie:
           'csrftoken=o4q1Ihf3JTBVbPIRuFvCtHZVT3RHp0X8; sessionid=0rx0ut9910ocx5ggaz1l6en6khbzxg1n',
       },

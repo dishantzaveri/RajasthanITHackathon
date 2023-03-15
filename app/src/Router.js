@@ -94,12 +94,12 @@ const Router = () => {
 
   return (
     <NavigationContainer theme={Mytheme} independent={true}>
-      {/* {userToken ? 
+      {userToken ? 
       <AppStack /> 
       : 
       <AuthStack />
-      } */}
-      <AppStack/>
+      }
+      {/* <AppStack/> */}
     </NavigationContainer>
   );
 };
