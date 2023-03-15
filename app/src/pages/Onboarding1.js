@@ -59,8 +59,8 @@ const Onboarding1 = ({route}) => {
 
     fetch(
       route.params.role === 'mentor'
-        ? 'http://127.0.0.1:8000/account/mentor_register/'
-        : 'http://127.0.0.1:8000/account/entrepreneur_register/',
+        ? 'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/mentor_register/'
+        : 'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/entrepreneur_register/',
       requestOptions,
     )
       .then(response => response.text())

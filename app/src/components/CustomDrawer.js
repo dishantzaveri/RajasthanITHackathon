@@ -31,7 +31,7 @@ const CustomDrawer = props => {
     };
 
     fetch(
-      `http://127.0.0.1:8000/account/${
+      `https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/${
         user?.is_mentor ? 'mentor' : 'entrepreneur'
       }/`,
       requestOptions,

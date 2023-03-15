@@ -74,7 +74,7 @@ const Profile2 = ({navigation, route}) => {
         redirect: 'follow',
       };
       fetch(
-        'http://127.0.0.1:8000/account/mentor/',
+        'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/mentor/',
         requestOptions,
       )
         .then(response => response.text())
@@ -108,7 +108,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'http://127.0.0.1:8000/account/education/',
+      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/education/',
       requestOptions,
     )
       .then(response => response.text())
@@ -142,7 +142,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'http://127.0.0.1:8000/account/experience/',
+      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/experience/',
       requestOptions,
     )
       .then(response => response.text())
@@ -172,7 +172,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'http://127.0.0.1:8000/account/gstverify/',
+      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/gstverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -199,7 +199,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'http://127.0.0.1:8000/account/mentor/',
+      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/mentor/',
       requestOptions,
     )
       .then(response => {
@@ -235,7 +235,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'http://127.0.0.1:8000/account/cinverify/',
+      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/cinverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -265,7 +265,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'http://127.0.0.1:8000/account/panverify/',
+      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/panverify/',
       requestOptions,
     )
       .then(response => response.text())

@@ -52,7 +52,7 @@ const AddEventC = () => {
       redirect: 'follow',
     };
 
-    fetch('http://127.0.0.1:8000/news/funding/', requestOptions)
+    fetch('https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/news/funding/', requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
@@ -75,7 +75,7 @@ const AddEventC = () => {
   const getStartUps = async () => {
     var config = {
       method: 'get',
-      url: 'http://127.0.0.1:8000/account/startup/',
+      url: 'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/startup/',
       headers: {
         Authorization: 'Token da5da01f5bbc29eb4ba0a84b21a580c3ede8147a',
       },

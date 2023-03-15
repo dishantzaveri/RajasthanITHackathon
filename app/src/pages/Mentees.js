@@ -29,7 +29,7 @@ const Mentees = ({navigation}) => {
     console.log(user?.token);
     var config = {
       method: 'get',
-      url: 'http://127.0.0.1:8000/account/startups_list/',
+      url: 'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/startups_list/',
       headers: {
         Authorization: `Token ${user?.token}`,
         Cookie:
@@ -58,7 +58,7 @@ const Mentees = ({navigation}) => {
     );
     var config = {
       method: 'post',
-      url: 'http://127.0.0.1:8000/account/search_startups/',
+      url: 'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/search_startups/',
       headers: myHeaders,
       data: data,
     };
