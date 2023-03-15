@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'accounts',
     'newsandpolicis',
     'testapp',
+    'marketplace',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
