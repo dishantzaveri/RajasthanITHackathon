@@ -107,6 +107,7 @@ class Education(models.Model):
 
 class MentorProfile(models.Model):
     user = models.OneToOneField(User,on_delete=models.CASCADE)
+    # mentor_score = models.FloatField(null=True,blank=True)
     expertise = models.CharField(max_length=70,null=True,blank=True)
     latitude = models.FloatField(null=True,blank=True)
     longitude = models.FloatField(null=True,blank=True)
@@ -132,7 +133,8 @@ class Coins(models.Model):
     date_modified = models.DateField(default=datetime.date.today)
 
 class Myrating(models.Model):
-    entrepreneur_profile   = models.ForeignKey(EntrepreneurProfile,on_delete=models.CASCADE,related_name='rating_entrepreneur',null=True, blank=True) 
+    entrepreneur_profile   = models.ForeignKey(EntrepreneurProfile,on_delete=models.CASCADE,related_name='rating_entrepreneur',null=True, blank=True)
+    # cibil_score = models.IntegerField(default=300, )
     mentor_profile  = models.ForeignKey(MentorProfile,on_delete=models.CASCADE,related_name='rating_mentor',null=True, blank=True)
     rating  = models.IntegerField(default=1,validators=[MaxValueValidator(5),MinValueValidator(0)])
     class Meta:
@@ -142,3 +144,9 @@ class Prototype(models.Model):
      user = models.ForeignKey(User, on_delete = models.CASCADE)
      description= models.TextField(True, null=True)
      paper = models.FileField(blank=True, null=True)
+
+
+
+
+####### Rajasthan code lines
+# 110, 137
