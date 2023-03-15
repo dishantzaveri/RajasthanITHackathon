@@ -74,6 +74,7 @@ class LoginAPI(GenericAPIView):
 		if user :
 			login(request,user)
 			serializer = self.serializer_class(user)
+			print(serializer)
 			token = Token.objects.get(user=user)
 			return Response({'token' : token.key,'email' : user.email,'name' : user.name, 'is_entrepreneur': user.is_entrepreneur, 'is_mentor': user.is_mentor},status = status.HTTP_200_OK)
 		return Response('Invalid Credentials',status = status.HTTP_404_NOT_FOUND)
