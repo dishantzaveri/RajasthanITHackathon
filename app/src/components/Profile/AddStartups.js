@@ -32,7 +32,7 @@ const GSTNumber = ({}) => {
     };
 
     fetch(
-      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/gstverify/',
+      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/gstverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -98,7 +98,7 @@ const CINNumber = ({}) => {
     };
 
     fetch(
-      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/cinverify/',
+      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/cinverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -220,7 +220,7 @@ const PanNumber = () => {
     };
 
     fetch(
-      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/panverify/',
+      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/panverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -239,7 +239,7 @@ const PanNumber = () => {
           redirect: 'follow',
         };
         fetch(
-          'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/startup/',
+          'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/startup/',
           requestOptions2,
         )
           .then(response => response.text())
@@ -375,7 +375,7 @@ const PatentNumber = ({}) => {
     };
 
     fetch(
-      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/patentverify/',
+      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/patentverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -504,7 +504,7 @@ const AddStartups = ({navigation}) => {
     };
 
     fetch(
-      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/entrepreneur/',
+      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/entrepreneur/',
       requestOptions,
     )
       .then(response => response.text())

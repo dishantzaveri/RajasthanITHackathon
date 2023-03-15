@@ -53,7 +53,7 @@ const MentorMenteesDetail = ({route, props}) => {
           <Image
             source={{
               uri: data?.profile_pic
-                ? `https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/${data.profile_pic}`
+                ? `https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/${data.profile_pic}`
                 : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png',
             }}
             style={{

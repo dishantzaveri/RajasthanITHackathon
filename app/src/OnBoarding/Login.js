@@ -44,7 +44,7 @@ function Login({navigation}) {
     };
 
     fetch(
-      'https://3ab8-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/login/',
+      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/login/',
       requestOptions,
     )
       .then(response => response.json())
