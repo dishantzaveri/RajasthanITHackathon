@@ -121,7 +121,7 @@ class WorkExperienceDetails(viewsets.ModelViewSet):
 class EducationDetails(viewsets.ModelViewSet):
 	queryset = Education.objects.all()
 	serializer_class = EducationSerializer
-	# permission_classes = [permissions.IsAuthenticated]
+	permission_classes = [permissions.IsAuthenticated]
 
 	def get_queryset(self):
 		return Education.objects.filter(user=self.request.user)
