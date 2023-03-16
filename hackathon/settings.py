@@ -166,6 +166,6 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')  #your email goes here
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD') #password
  
-X_RapidAPI_Key = env('X_RapidAPI_Key')
-X_RapidAPI_Host = env('X_RapidAPI_Host')
+X_RAPIDAPI_KEY = env('X_RAPIDAPI_KEY')
+X_RAPIDAPI_HOST = env('X_RAPIDAPI_HOST')
 

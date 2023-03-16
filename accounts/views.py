@@ -204,8 +204,8 @@ class GstVerification(APIView):
 		payload = f"clientid=111&txn_id=2254545&consent=Y&gstnumber={gstnumber}&method=gstvalidatev2"
 		headers = {
 		    "content-type": "application/x-www-form-urlencoded",
-		    "X-RapidAPI-Key": settings.X_RapidAPI_Key,
-		    "X-RapidAPI-Host": settings.X_RapidAPI_Host
+		    "X-RapidAPI-Key": settings.X_RAPIDAPI_KEY,
+		    "X-RapidAPI-Host": settings.X_RAPIDAPI_HOST
 		    }
 		
 		response = requests.request("POST", url, data=payload, headers=headers)
