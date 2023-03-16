@@ -9,9 +9,20 @@ from .models import *
 from .serializers import *
 from django.db.models import Q
 import os
-from . import custom_permissions
+# from . import custom_permissions
 # from .Utils import Util
 
 ########################Marketplace part begins####################################
 
-#hello test line
+class ItemList(generics.ListCreateAPIView):
+    queryset = ItemPost.objects.all()
+    serializer_class = ItemPostSerializer
+    permission_classes = [permissions.IsAuthenticated]
+    
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
+
+class ItemDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = ItemPost.objects.all()
+    serializer_class = ItemPostSerializer
+    permission_classes = [permissions.IsAuthenticated]
