@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+
 import React, {useEffect} from 'react';
 import Router from './src/Router';
 import {Provider} from 'react-redux';
