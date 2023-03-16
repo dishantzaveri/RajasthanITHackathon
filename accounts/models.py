@@ -81,7 +81,7 @@ class Startup(models.Model):
     aadhaar_linked = models.CharField(max_length=255, null=True, blank=True)
     pitch_deck = models.FileField(upload_to=user_directory_path,null=True,blank=True)
 
-    anual_income = models.IntegerField(null=True, blank=True)
+    anual_turnover = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.tradeName
