@@ -9,7 +9,7 @@ class ItemPost(models.Model):
     item_body 			= models.TextField(blank=True, default='')
     item_images    		= models.ImageField(null=True,blank=True)
     item_owner		    = models.ForeignKey(User, on_delete=models.CASCADE,related_name='item_by')
-    item_rating         = models.IntegerField(default=0, blank=True, null=True)
+    # item_rating         = models.IntegerField(default=0, blank=True, null=True)
 
     
     class Meta:
