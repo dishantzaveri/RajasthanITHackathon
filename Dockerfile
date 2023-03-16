@@ -15,7 +15,7 @@ RUN pip install -r requirements.txt
 
 RUN python manage.py makemifrations
 
-RUN python manage.oy migrate
+RUN python manage.py migrate
 
 RUN python manage.py runserver
 
