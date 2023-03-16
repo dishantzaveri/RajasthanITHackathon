@@ -81,6 +81,8 @@ class Startup(models.Model):
     aadhaar_linked = models.CharField(max_length=255, null=True, blank=True)
     pitch_deck = models.FileField(upload_to=user_directory_path,null=True,blank=True)
 
+    anual_income = models.IntegerField(null=True, blank=True)
+
     def __str__(self):
         return self.tradeName
 
@@ -115,6 +117,7 @@ class MentorProfile(models.Model):
 class EntrepreneurProfile(models.Model):
     user = models.OneToOneField(User,on_delete=models.CASCADE,related_name='user')
     startup = models.ManyToManyField(Startup)
+    cibil_score = models.IntegerField(null=True, blank=True)
     mentor = models.ForeignKey(MentorProfile,models.SET_NULL,null=True,blank=True)
 
 class Mentorship(models.Model):
