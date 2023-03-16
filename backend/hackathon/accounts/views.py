@@ -74,7 +74,6 @@ class LoginAPI(GenericAPIView):
 		if user :
 			login(request,user)
 			serializer = self.serializer_class(user)
-			print(serializer)
 			token = Token.objects.get(user=user)
 			return Response({'token' : token.key,'email' : user.email,'name' : user.name, 'is_entrepreneur': user.is_entrepreneur, 'is_mentor': user.is_mentor},status = status.HTTP_200_OK)
 		return Response('Invalid Credentials',status = status.HTTP_404_NOT_FOUND)
@@ -122,7 +121,7 @@ class WorkExperienceDetails(viewsets.ModelViewSet):
 class EducationDetails(viewsets.ModelViewSet):
 	queryset = Education.objects.all()
 	serializer_class = EducationSerializer
-	permission_classes = [permissions.IsAuthenticated]
+	# permission_classes = [permissions.IsAuthenticated]
 
 	def get_queryset(self):
 		return Education.objects.filter(user=self.request.user)
@@ -205,8 +204,8 @@ class GstVerification(APIView):
 		payload = f"clientid=111&txn_id=2254545&consent=Y&gstnumber={gstnumber}&method=gstvalidatev2"
 		headers = {
 		    "content-type": "application/x-www-form-urlencoded",
-		    "X-RapidAPI-Key": settings.X_RapidAPI_Key,
-		    "X-RapidAPI-Host": settings.X_RapidAPI_Host
+		    "X-RapidAPI-Key": settings.X_RAPIDAPI_KEY,
+		    "X-RapidAPI-Host": settings.X_RAPIDAPI_HOST
 		    }
 		
 		response = requests.request("POST", url, data=payload, headers=headers)
@@ -281,7 +280,7 @@ class CINVerification(APIView):
 			# trimmed_response['principalPlaceOfBusinessAddress'] = response_dict["0"]["result"].pop('registered_address')
 			# trimmed_response['cin_status'] = response_dict["0"]["result"].pop('company_status')
 			# serializer = StartupSerializer(data = trimmed_response)
-			# serializer.is_valid(raise_exception=True)
+			# serializer.is_valid(raise_exception=True)bac
 			# serializer.save(user=self.request.user)
 			return JsonResponse(response_dict, safe=False,status = status.HTTP_200_OK)
 		else:
