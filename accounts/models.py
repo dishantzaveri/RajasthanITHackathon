@@ -74,7 +74,7 @@ class Startup(models.Model):
     dateOfRegistration = models.CharField(max_length = 255,null=True,blank=True)
     constitutionOfBusiness = models.CharField(max_length=255, null=True, blank=True)
     taxpayerType = models.CharField(max_length=255, null=True, blank=True)
-    natureOfBusinessActivity = models.CharField(max_length=255, null=True, blank=True)
+    natureOfBusinessActivity = models.CharField(max_length=255, null=True, blank=True)                          #Occupation Type
     principalPlaceOfBusinessAddress = models.CharField(max_length=255, null=True, blank=True)
     stateJurisdiction = models.CharField(max_length=255, null=True, blank=True)
     centerJurisdiction = models.CharField(max_length=255, null=True, blank=True)
@@ -109,7 +109,7 @@ class Education(models.Model):
 
 class MentorProfile(models.Model):
     user = models.OneToOneField(User,on_delete=models.CASCADE)
-    # mentor_score = models.FloatField(null=True,blank=True)
+    mentor_score = models.FloatField(null=True,blank=True)
     expertise = models.CharField(max_length=70,null=True,blank=True)
     latitude = models.FloatField(null=True,blank=True)
     longitude = models.FloatField(null=True,blank=True)
