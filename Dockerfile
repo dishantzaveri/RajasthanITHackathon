@@ -8,11 +8,12 @@ WORKDIR /app
 COPY . /app
 
 # Install the application dependencies
-RUN mkvirtualenv virenv
-RUN workon virenv
+# RUN pip install virtualenvwrapper-win
+# RUN mkvirtualenv virenv
+# RUN workon virenv
 RUN pip install -r requirements.txt
 
-RUN python manage.py makemifrations
+RUN python manage.py makemigrations
 
 RUN python manage.py migrate
 
