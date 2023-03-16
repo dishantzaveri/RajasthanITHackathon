@@ -9,6 +9,8 @@ COPY . /app
 
 ENV PYTHONUNBUFFERED=1
 
+
+
 # Install the application dependencies
 # RUN pip install virtualenvwrapper-win
 # RUN mkvirtualenv virenv

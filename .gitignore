@@ -14,3 +14,4 @@ venv.bak/
 .DS_Store
 virtual/
 media/
+Dockerfile
