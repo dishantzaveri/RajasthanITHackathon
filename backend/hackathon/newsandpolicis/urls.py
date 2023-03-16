@@ -15,8 +15,4 @@ urlpatterns = [
     path('monthwisefundingPIE/',views.monthwisefundingPIE.as_view()),
     path('stagesectormixPIE/',views.stagesectormixPIE.as_view()),
     path('Fundingperregionbargraphapi/',views.Fundingperregionbargraphapi.as_view())
-
-
-    
-
 ]
