@@ -8,6 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the application dependencies
+RUN pip install virtualenvwrapper-win
 RUN mkvirtualenv virenv
 RUN workon virenv
 RUN pip install -r requirements.txt
