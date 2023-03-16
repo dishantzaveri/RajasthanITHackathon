@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy the application files into the working directory
 COPY . /app
 
+ENV PYTHONUNBUFFERED=1
+
 # Install the application dependencies
 # RUN pip install virtualenvwrapper-win
 # RUN mkvirtualenv virenv
