@@ -59,20 +59,20 @@ class WorkExperienceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = WorkExperience
-        fields = ['id','job_title','company_name', 'location', 'industry', 'start_date', 'end_date', 'description']
+        fields = ['id','job_title','company_name', 'location', 'industry', 'description']
 
 class EducationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Education
-        fields = ['id','institute','degree', 'study_field', 'start_date', 'end_date', 'grade', 'extracurriculars','description']
+        fields = ['id','institute','degree', 'study_field', 'grade', 'extracurriculars','description']
 
 class StartupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Startup
         fields = ['id','legalNameOfBusiness','tradeName','is_verified','gstin', 'gstnStatus', 'dateOfRegistration', 'constitutionOfBusiness',
-        'taxpayerType', 'natureOfBusinessActivity','principalPlaceOfBusinessAddress', 'stateJurisdiction', 'centerJurisdiction', 'aadhaar_linked','pitch_deck']
+        'taxpayerType', 'natureOfBusinessActivity','principalPlaceOfBusinessAddress', 'stateJurisdiction', 'centerJurisdiction', 'aadhaar_linked','pitch_deck', 'anual_turnover']
 
 
 class MentorLocationSerializer(serializers.ModelSerializer):
@@ -107,7 +107,7 @@ class MentorshipSerializer(serializers.ModelSerializer):
 
     class Meta:
         model=Mentorship
-        fields = ['id','mentor','entrepreneur','created_at','is_active','ended_at']
+        fields = ['id','mentor','entrepreneur','created_at','is_active']
     
     # def to_representation(self, instance):
     #     response = super().to_representation(instance)
