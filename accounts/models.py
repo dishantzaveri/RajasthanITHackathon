@@ -92,8 +92,8 @@ class WorkExperience(models.Model):
     company_name = models.CharField(max_length=255)
     location = models.CharField(max_length=255, blank=True, null=True)
     industry = models.CharField(max_length=255, blank=True, null=True)
-    # start_date = models.DateField()
-    # end_date = models.DateField(null=True,blank=True)
+    start_date = models.DateField()
+    end_date = models.DateField(null=True,blank=True)
     description = models.TextField(max_length=255, blank=True, null=True)
 
 class Education(models.Model):
@@ -101,8 +101,8 @@ class Education(models.Model):
     institute = models.CharField(max_length=255)
     degree = models.CharField(max_length=255, blank=True, null=True)
     study_field = models.CharField(max_length= 255, blank=True, null=True)
-    # start_date = models.DateField()
-    # end_date = models.DateField()
+    start_date = models.DateField()
+    end_date = models.DateField()
     grade = models.CharField(max_length=255, blank=True, null=True)
     extracurriculars = models.TextField(blank=True, null=True, max_length=255)
     description = models.TextField(max_length=255, blank=True, null=True)
@@ -125,7 +125,7 @@ class Mentorship(models.Model):
     entrepreneur = models.ForeignKey(User, models.CASCADE, related_name='entrepreneur')
     created_at = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
-    # ended_at = models.DateTimeField(null=True,blank=True)
+    ended_at = models.DateTimeField(null=True,blank=True)
 
     class Meta:
         unique_together=('mentor','entrepreneur')
