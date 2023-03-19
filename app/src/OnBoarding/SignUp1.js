@@ -40,7 +40,7 @@ function SignUp1({ navigation }) {
     };
 
     fetch(
-      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/entrepreneur_register/',
+      'https://2d2b-117-250-3-86.in.ngrok.io/account/entrepreneur_register/',
       requestOptions,
     )
       .then(response => response.text())

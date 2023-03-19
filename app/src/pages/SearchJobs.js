@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignSelf: 'center',
         margin: 20,
-        backgroundColor: '#00CFDE',
+        backgroundColor: '#ABD0DA',
         color: '#fff',
     },
     nameInput: {
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     text2: {
         fontSize: 20,
         marginHorizontal: width * 0.05,
-        color: "#00CFDE",
+        color: "#ABD0DA",
         // fontWeight: 'bold',
         fontWeight: "400",
     },

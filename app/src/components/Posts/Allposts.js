@@ -49,7 +49,7 @@ export default function AllPosts({navigation}) {
 
     var config = {
       method: 'get',
-      url: 'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/api/posts/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/api/posts/',
       headers: {
         Authorization: 'Token 05fc1a3f496cac72aecc244ac6fe088d1243cb44',
         Cookie:

@@ -19,14 +19,14 @@ const BlockCard3 = ({ style, imageStyle, item, onPress }) => {
       <View style={[styles.container, style]}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' ,marginVertical:5}}>
           <TouchableOpacity>
-            <Text style={{ fontSize: 17, color: '#00CFDE' ,marginHorizontal:40 }}>
+            <Text style={{ fontSize: 17, color: '#ABD0DA' ,marginHorizontal:40 }}>
               View
             </Text>
           </TouchableOpacity>
          
           <TouchableOpacity>
 
-          <Feather name="edit" size={22} color={'#00CFDE'} style={{marginHorizontal:40}}/>
+          <Feather name="edit" size={22} color={'#ABD0DA'} style={{marginHorizontal:40}}/>
           </TouchableOpacity>
         </View>
         <Image source={sampleresume} style={[styles.image, imageStyle]} />

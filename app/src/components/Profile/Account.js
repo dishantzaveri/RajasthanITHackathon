@@ -22,12 +22,13 @@ export default function Account() {
     };
 
     fetch(
-      `https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/${
+      `https://2d2b-117-250-3-86.in.ngrok.io/account/${
         user?.is_mentor ? 'mentor' : 'entrepreneur'
       }/`,
       requestOptions,
     )
       .then(response => response.text())
+      .then
       .then(result => {
         console.log(result);
         console.log(JSON.parse(result)[0].startup);
@@ -42,7 +43,7 @@ export default function Account() {
     <View style={{flex: 1, backgroundColor: 'white'}}>
       <ScrollView>
         <LinearGradient
-          colors={[colors.primary, '#ADD8E6']}
+          colors={['#2F3A56', '#ABD0DA']}
           style={{width: '100%', height: 200, position: 'relative'}}>
           <View
             style={{
@@ -78,6 +79,7 @@ export default function Account() {
                 fontWeight: 'bold',
               }}>
               {user?.name}
+              
             </Text>
             <View
               style={{

@@ -23,7 +23,7 @@ const ResumeBuilder = ({ }) => {
 
 
 
-                <Progress.Bar progress={0.5} width={width * 0.65} height={height * 0.015} color='#00CFDE' />
+                <Progress.Bar progress={0.5} width={width * 0.65} height={height * 0.015} color='#ABD0DA' />
                 <Text style={styles.title2}>Complete your profile for better results</Text>
 
                 <Text style={styles.title3}>   Choose a template for your resume</Text>
@@ -35,7 +35,7 @@ const ResumeBuilder = ({ }) => {
             <View>
                 <TouchableOpacity onPress={() =>
                     navigation.navigate('Resume2')}>
-                    <Button style={{ backgroundColor: '#00CFDE', borderColor: '#00CFDE', marginBottom: 15, borderRadius: 5, width: width * 0.5 }} labelStyle={{ color: 'white', fontSize: 13 }} >Create my Resume</Button>
+                    <Button style={{ backgroundColor: '#ABD0DA', borderColor: '#ABD0DA', marginBottom: 15, borderRadius: 5, width: width * 0.5 }} labelStyle={{ color: 'white', fontSize: 13 }} >Create my Resume</Button>
                 </TouchableOpacity>
             </View>
 

@@ -31,7 +31,7 @@ const CustomDrawer = props => {
     };
 
     fetch(
-      `https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/${
+      `https://2d2b-117-250-3-86.in.ngrok.io/account/${
         user?.is_mentor ? 'mentor' : 'entrepreneur'
       }/`,
       requestOptions,
@@ -54,17 +54,18 @@ const CustomDrawer = props => {
     <View style={{flex: 1}}>
       <DrawerContentScrollView
         {...props}
-        contentContainerStyle={{backgroundColor: '#8200d6'}}>
+        contentContainerStyle={{backgroundColor: '#000000'}}
+        >
         <ImageBackground
-          source={require('../assets/menu-bg.jpeg')}
-          style={{padding: 20}}>
-          <Image
+          source={require('../assets/map.jpeg')}
+          style={{resizeMode:'contain',height: 250, width: 280}}>
+          {/* <Image
             source={{
               uri: data?.profile_pic,
             }}
-            style={{height: 80, width: 80, borderRadius: 40, marginBottom: 10}}
-          />
-          <Text
+            style={{height: 250, width: 80}}
+          /> */}
+          {/* <Text
             style={{
               color: '#fff',
               fontSize: 18,
@@ -83,7 +84,7 @@ const CustomDrawer = props => {
               You have 120 Coins
             </Text>
             <FontAwesome5 name="coins" size={14} color="#fff" />
-          </View>
+          </View> */}
         </ImageBackground>
         <View style={{flex: 1, backgroundColor: '#fff', paddingTop: 10}}>
           <DrawerItemList {...props} />
@@ -93,7 +94,7 @@ const CustomDrawer = props => {
           <TouchableOpacity
             style={{
               padding: 10,
-              backgroundColor: '#8200d6',
+              backgroundColor: '#E24748',
               borderRadius: 20,
             }}
             onPress={() => {

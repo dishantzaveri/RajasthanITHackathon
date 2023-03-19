@@ -287,7 +287,7 @@ const VideoCall = () => {
             >
               <Image
                 style={styles.logo}
-                source={require('../../assets/mentordots.png')}
+                source={require('../../assets/logo.jpeg')}
               />
               <View style={styles.buttonContainer}>
                 <Text style={styles.bodyText}>
@@ -387,8 +387,9 @@ const styles = StyleSheet.create({
   },
   bodyText: {
     fontSize: theme.fontSize.base,
-    marginBottom: 8,
+    margin:10,
     fontFamily: theme.fontFamily.body,
+    color: '#000000'
   },
   startContainer: {
     flexDirection: 'column',
@@ -407,9 +408,9 @@ const styles = StyleSheet.create({
 
     // alignSelf: 'flex-start',
     // marginVertical: 40,
-    margin:30,
-    width: 100,
-    height: 100,
+    margin:15,
+    width: 320,
+    height: 175,
     alignContent:'center',
     alignItems:'center',
     alignSelf:'center',

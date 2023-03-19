@@ -74,7 +74,7 @@ const Profile2 = ({navigation, route}) => {
         redirect: 'follow',
       };
       fetch(
-        'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/mentor/',
+        'https://2d2b-117-250-3-86.in.ngrok.io/account/mentor/',
         requestOptions,
       )
         .then(response => response.text())
@@ -108,7 +108,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/education/',
+      'https://2d2b-117-250-3-86.in.ngrok.io/account/education/',
       requestOptions,
     )
       .then(response => response.text())
@@ -142,7 +142,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/experience/',
+      'https://2d2b-117-250-3-86.in.ngrok.io/account/experience/',
       requestOptions,
     )
       .then(response => response.text())
@@ -172,7 +172,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/gstverify/',
+      'https://2d2b-117-250-3-86.in.ngrok.io/account/gstverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -199,7 +199,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/mentor/',
+      'https://2d2b-117-250-3-86.in.ngrok.io/account/mentor/',
       requestOptions,
     )
       .then(response => {
@@ -235,7 +235,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/cinverify/',
+      'https://2d2b-117-250-3-86.in.ngrok.io/account/cinverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -265,7 +265,7 @@ const Profile2 = ({navigation, route}) => {
     };
 
     fetch(
-      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/panverify/',
+      'https://2d2b-117-250-3-86.in.ngrok.io/account/panverify/',
       requestOptions,
     )
       .then(response => response.text())
@@ -287,7 +287,7 @@ const Profile2 = ({navigation, route}) => {
               Known Languages
             </Text>
             <TouchableOpacity>
-              <Text style={{fontSize: 18, color: '#00CFDE'}}>Add</Text>
+              <Text style={{fontSize: 18, color: '#ABD0DA'}}>Add</Text>
             </TouchableOpacity>
           </View>
           <View style={{flexDirection: 'row'}}>
@@ -311,7 +311,7 @@ const Profile2 = ({navigation, route}) => {
             }}>
             <Text style={{fontSize: 18, fontWeight: 'bold'}}>Education</Text>
             <TouchableOpacity onPress={toggleModalVisibility}>
-              <Text style={{fontSize: 18, color: '#00CFDE'}}>Add</Text>
+              <Text style={{fontSize: 18, color: '#ABD0DA'}}>Add</Text>
             </TouchableOpacity>
             <Modal
               animationType="slide"
@@ -330,14 +330,14 @@ const Profile2 = ({navigation, route}) => {
                     <Icon
                       name="book"
                       size={20}
-                      color="#00CFDE"
+                      color="#ABD0DA"
                       style={{margin: 10}}
                     />
                     <Text style={{margin: 10}}>Add/Edit Work Education</Text>
                     <Icon
                       name="close"
                       size={20}
-                      color="#00CFDE"
+                      color="#ABD0DA"
                       style={{margin: 10}}
                       onPress={toggleModalVisibility}
                     />
@@ -479,7 +479,7 @@ const Profile2 = ({navigation, route}) => {
               Work Experience
             </Text>
             <TouchableOpacity onPress={toggleModalVisibility2}>
-              <Text style={{fontSize: 18, color: '#00CFDE'}}>Add</Text>
+              <Text style={{fontSize: 18, color: '#ABD0DA'}}>Add</Text>
             </TouchableOpacity>
             <Modal
               animationType="slide"
@@ -498,14 +498,14 @@ const Profile2 = ({navigation, route}) => {
                     <Icon
                       name="book"
                       size={20}
-                      color="#00CFDE"
+                      color="#ABD0DA"
                       style={{margin: 10}}
                     />
                     <Text style={{margin: 10}}>Add/Edit Work Experience</Text>
                     <Icon
                       name="close"
                       size={20}
-                      color="#00CFDE"
+                      color="#ABD0DA"
                       style={{margin: 10}}
                       onPress={toggleModalVisibility2}
                     />
@@ -639,7 +639,7 @@ const Profile2 = ({navigation, route}) => {
             }}>
             <Text style={{fontSize: 18, fontWeight: 'bold'}}>Startups</Text>
             <TouchableOpacity onPress={toggleModalVisibility3}>
-              <Text style={{fontSize: 18, color: '#00CFDE'}}>Add</Text>
+              <Text style={{fontSize: 18, color: '#ABD0DA'}}>Add</Text>
             </TouchableOpacity>
             <Modal
               animationType="slide"
@@ -658,7 +658,7 @@ const Profile2 = ({navigation, route}) => {
                     <Icon
                       name="book"
                       size={20}
-                      color="#00CFDE"
+                      color="#ABD0DA"
                       style={{margin: 10}}
                     />
                     <Text style={{margin: 5}}>
@@ -667,7 +667,7 @@ const Profile2 = ({navigation, route}) => {
                     <Icon
                       name="close"
                       size={20}
-                      color="#00CFDE"
+                      color="#ABD0DA"
                       style={{margin: 10}}
                       onPress={toggleModalVisibility3}
                     />
@@ -750,7 +750,7 @@ const Profile2 = ({navigation, route}) => {
             }}>
             <Text style={{fontSize: 18, fontWeight: 'bold'}}>Expertise</Text>
             <TouchableOpacity onPress={toggleModalVisibility4}>
-              <Text style={{fontSize: 18, color: '#00CFDE'}}>Add</Text>
+              <Text style={{fontSize: 18, color: '#ABD0DA'}}>Add</Text>
             </TouchableOpacity>
             <Modal
               animationType="slide"
@@ -769,14 +769,14 @@ const Profile2 = ({navigation, route}) => {
                     <Icon
                       name="book"
                       size={20}
-                      color="#00CFDE"
+                      color="#ABD0DA"
                       style={{margin: 10}}
                     />
                     <Text style={{margin: 10}}>Enter your Expertise</Text>
                     <Icon
                       name="close"
                       size={20}
-                      color="#00CFDE"
+                      color="#ABD0DA"
                       style={{margin: 10}}
                       onPress={toggleModalVisibility4}
                     />
@@ -829,7 +829,7 @@ const Profile2 = ({navigation, route}) => {
               My Preference
             </Text>
             <TouchableOpacity>
-              <Text style={{fontSize: 18, color: '#00CFDE'}}>Add</Text>
+              <Text style={{fontSize: 18, color: '#ABD0DA'}}>Add</Text>
             </TouchableOpacity>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
@@ -856,7 +856,7 @@ const Profile2 = ({navigation, route}) => {
               Personal Information
             </Text>
             <TouchableOpacity>
-              <Text style={{fontSize: 18, color: '#00CFDE'}}>Add</Text>
+              <Text style={{fontSize: 18, color: '#ABD0DA'}}>Add</Text>
             </TouchableOpacity>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
@@ -919,7 +919,7 @@ const styles = StyleSheet.create({
   button5: {
     width: width * 0.2,
     alignSelf: 'flex-end',
-    backgroundColor: '#00CFDE',
+    backgroundColor: '#ABD0DA',
     margin: 20,
     borderWidth: 1,
     borderRadius: 10,
@@ -1026,7 +1026,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     justifyContent: 'center',
     alignContent: 'center',
-    backgroundColor: '#00CFDE',
+    backgroundColor: '#ABD0DA',
     flexDirection: 'row',
     margin: 10,
     alignContent: 'center',
@@ -1081,7 +1081,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   label1: {
-    color: '#00CFDE',
+    color: '#ABD0DA',
     fontWeight: '100',
     fontSize: 12,
   },

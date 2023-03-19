@@ -2,8 +2,8 @@ export const data = [
     {
         id: 0,
         coords: {
-            latitude: 30.7993,
-            longitude: 76.9149,
+            latitude: 26.8921,
+            longitude: 75.85075,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
         },
@@ -11,8 +11,8 @@ export const data = [
     {
         id: 1,
         coords: {
-            latitude: 30.7786,
-            longitude: 76.9060,
+            latitude: 26.24302,
+            longitude: 74.78797,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
         },
@@ -20,8 +20,8 @@ export const data = [
     {
         id: 3,
         coords: {
-            latitude: 30.8333,
-            longitude: 76.9357,
+            latitude: 29.659361,
+            longitude: 73.453110,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
         },
@@ -29,8 +29,8 @@ export const data = [
     {
         id: 4,
         coords: {
-            latitude: 30.8406,
-            longitude: 76.9584,
+            latitude: 28.119631,
+            longitude: 75.381866,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
         },
@@ -38,36 +38,8 @@ export const data = [
     {
         id: 5,
         coords: {
-            latitude: 30.6936,
-            longitude: 76.8450,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-        },
-    },
-    {
-        id: 6,
-        coords: {
-            latitude: 30.7333,
-            longitude: 76.7833,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-        },
-    },
-    {
-        id: 7,
-        coords: {
-            latitude: 30.7333,
-            longitude: 77.7833,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-        },
-    },
-    {
-        id: 8,
-
-        coords: {
-            latitude: 30.7333,
-            longitude: 78.7833,
+            latitude:27.614258,
+            longitude: 75.145195,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
         },

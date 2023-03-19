@@ -40,7 +40,7 @@ const UploadPost = () => {
       redirect: 'follow',
     };
 
-    fetch('https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/api/posts/', requestOptions)
+    fetch('https://2d2b-117-250-3-86.in.ngrok.io/api/posts/', requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
@@ -66,7 +66,7 @@ const UploadPost = () => {
         backgroundColor: '#fff',
         flex: 1,
       }}>
-      <View
+      {/* <View
         style={{
           alignItems: 'center',
           padding: 15,
@@ -80,7 +80,7 @@ const UploadPost = () => {
           }}>
           Upload A Post
         </Text>
-      </View>
+      </View> */}
       <ScrollView>
         {image ? (
           <View>
@@ -101,12 +101,16 @@ const UploadPost = () => {
           }}>
           <Text
             style={{
-              fontSize: 18,
+              fontSize: 20,
               fontWeight: 'bold',
               color: 'black',
-              marginBottom: 10,
+              margin: 20,
+              alignContent: 'center',
+              alignSelf: 'center',
+              justifyContent: 'center',
+
             }}>
-            Enter Details
+            Enter Details of the Post
           </Text>
           <View
             style={{

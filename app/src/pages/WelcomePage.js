@@ -12,7 +12,7 @@ import {
 import {WebView} from 'react-native-webview';
 import LinearGradient from 'react-native-linear-gradient';
 import {height, width} from '../Consts';
-import logo from '../assets/mentordots.png';
+import logo from '../assets/logo.jpeg';
 import {useTheme } from '@react-navigation/native';
 
 const WelcomePage = ({navigation}) => {
@@ -142,8 +142,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   image: {
-    width: Dimensions.get('window').width / 3,
-    height: Dimensions.get('window').height / 10,
+    width: Dimensions.get('window').width / 2,
+    height: Dimensions.get('window').height / 7.5,
     margin:10
   },
   buttonText: {

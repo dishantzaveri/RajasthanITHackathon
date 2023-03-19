@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.grey,
   },
   disabled: {
-    backgroundColor: '#00CFDE',
+    backgroundColor: '#ABD0DA',
   },
   text: {
     fontFamily: theme.fontFamily.body,

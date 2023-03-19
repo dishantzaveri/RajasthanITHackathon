@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 150,
   },
-  viewMore: { color: '#00CFDE', fontSize: 15 , alignSelf: 'center', fontWeight: '500',margin:5},
+  viewMore: { color: '#ABD0DA', fontSize: 15 , alignSelf: 'center', fontWeight: '500',margin:5},
 
 });
 

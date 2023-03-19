@@ -64,7 +64,7 @@ const EventScreen = ({route}) => {
         <View style={{flex: 1}}></View>
         <Paragraph
           style={{
-            color: '#00CFDE',
+            color: '#ABD0DA',
             fontWeight: 'bold',
             fontSize: 16,
             textDecorationLine: 'underline',
@@ -77,7 +77,7 @@ const EventScreen = ({route}) => {
         <View style={{marginTop: 10}}>
           <Paragraph
             style={{
-              color: '#00CFDE',
+              color: '#ABD0DA',
               fontWeight: 'bold',
               fontSize: 16,
               textDecorationLine: 'underline',
@@ -102,7 +102,7 @@ const EventScreen = ({route}) => {
               onPress={() => navigation.navigate('RazorpayScreens')}
               style={'solid'}
               buttonStyle={{
-                backgroundColor: '#00CFDE',
+                backgroundColor: '#ABD0DA',
                 height: 50,
                 width: 120,
                 borderRadius: 30,
@@ -121,7 +121,7 @@ const EventScreen = ({route}) => {
               navigation.navigate('Chat');
             }}
             buttonStyle={{
-              backgroundColor: '#00CFDE',
+              backgroundColor: '#ABD0DA',
               height: 50,
               width: 120,
               borderRadius: 30,

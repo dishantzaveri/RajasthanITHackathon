@@ -29,7 +29,7 @@ const Mentees = ({navigation}) => {
     console.log(user?.token);
     var config = {
       method: 'get',
-      url: 'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/startups_list/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/startups_list/',
       headers: {
         Authorization: `Token ${user?.token}`,
         Cookie:
@@ -58,7 +58,7 @@ const Mentees = ({navigation}) => {
     );
     var config = {
       method: 'post',
-      url: 'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/search_startups/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/search_startups/',
       headers: myHeaders,
       data: data,
     };

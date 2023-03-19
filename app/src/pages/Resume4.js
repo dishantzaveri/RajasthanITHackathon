@@ -242,7 +242,7 @@ const styles = StyleSheet.create({
     button2: {
         width: width * 0.35,
         alignSelf: 'center',
-        backgroundColor: '#00CFDE',
+        backgroundColor: '#ABD0DA',
         flexDirection: 'row',
         margin: 10,
         alignContent: 'center',
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     label1: {
-        color: '#00CFDE',
+        color: '#ABD0DA',
         fontWeight: '100',
         fontSize: 12,
 

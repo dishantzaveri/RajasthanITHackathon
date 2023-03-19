@@ -15,7 +15,7 @@ const PointsHistory = ({ }) => {
             </View>
             <View style={{ margin: 20,borderTopColor:'#000000' , borderTopWidth: 1 }}>
 
-                <Text style={styles.title}>Referred Mentordots Mobile App to a friend</Text>
+                <Text style={styles.title}>Referred Samruddh bharat Mobile App to a friend</Text>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', alignContent: 'center' }}>
                     <Image source={coin} style={styles.image} ></Image>
                     <Text style={styles.title1}> +50</Text>
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     title1: {
         fontSize: 13,
         textAlign: 'center',
-        color: '#00CFDE',
+        color: '#ABD0DA',
 
         marginVertical: 10,
     },

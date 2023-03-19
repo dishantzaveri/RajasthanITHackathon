@@ -13,7 +13,7 @@ const HomeScreen = ({navigation}) => {
       redirect: 'follow',
     };
 
-    fetch('https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/news/funding/', requestOptions)
+    fetch('https://2d2b-117-250-3-86.in.ngrok.io/news/funding/', requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result);

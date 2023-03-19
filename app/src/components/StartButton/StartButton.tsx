@@ -25,7 +25,7 @@ const StartButton = ({ onPress, disabled, starting }: Props) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical: 16,
+    marginVertical: 10,
   },
 });
 

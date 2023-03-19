@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     margin: 5,
-    backgroundColor: '#00CFDE',
+    backgroundColor: '#ABD0DA',
     color: '#fff',
   },
 
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
-    color: '#00CFDE',
+    color: '#ABD0DA',
     fontWeight: '500',
     marginBottom: height * 0.035,
     margin: 10,

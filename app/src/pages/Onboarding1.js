@@ -12,7 +12,7 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import {Button} from 'react-native-paper';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo.jpeg';
 import Uploadpic from '../assets/uploadpic.png';
 import Selectpic from '../assets/selectpic.png';
 import LinearGradient from 'react-native-linear-gradient';
@@ -59,8 +59,8 @@ const Onboarding1 = ({route}) => {
 
     fetch(
       route.params.role === 'mentor'
-        ? 'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/mentor_register/'
-        : 'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/entrepreneur_register/',
+        ? 'https://2d2b-117-250-3-86.in.ngrok.io/account/mentor_register/'
+        : 'https://2d2b-117-250-3-86.in.ngrok.io/account/entrepreneur_register/',
       requestOptions,
     )
       .then(response => response.text())
@@ -256,7 +256,7 @@ const Onboarding1 = ({route}) => {
               style={{
                 marginTop: 10,
                 padding: 10,
-                backgroundColor: '#00CFDE',
+                backgroundColor: '#ABD0DA',
        
               }}
               onPress={() => captureImage('photo')}>
@@ -368,7 +368,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     margin: 25,
-    backgroundColor: '#00CFDE',
+    backgroundColor: '#ABD0DA',
     color: '#fff',
   },
 
@@ -378,7 +378,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
-    color: '#00CFDE',
+    color: '#ABD0DA',
     fontWeight: '500',
     marginBottom: height * 0.035,
     margin: 10,

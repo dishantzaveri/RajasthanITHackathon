@@ -143,11 +143,7 @@ function Tabs() {
           if (route.name === 'Mentors') {
             return <FontAwesome5 name="people-carry" size={27} color={color} />;
           }
-          if (route.name === 'Mentees') {
-            return (
-              <FontAwesome5 name="people-arrows" size={27} color={color} />
-            );
-          }
+         
           if (route.name === 'Posts') {
             return (
               <MaterialIcons name="dynamic-feed" size={27} color={color} />
@@ -199,11 +195,11 @@ function Tabs() {
         }}
       />
 
-      <Tab.Screen
-        name="Mentees"
+      {/* <Tab.Screen
+        name="Entrepreneur"
         component={MenteeScreen}
         options={{headerShown: false}}
-      />
+      /> */}
     </Tab.Navigator>
   );
 }
@@ -313,7 +309,7 @@ const AppStack = () => {
         drawerContent={props => <CustomDrawer {...props} />}
         screenOptions={{
           headerShown: false,
-          drawerActiveBackgroundColor: '#aa18ea',
+          drawerActiveBackgroundColor: '#E24748',
           drawerActiveTintColor: '#fff',
           drawerInactiveTintColor: '#333',
           drawerLabelStyle: {
@@ -350,7 +346,7 @@ const AppStack = () => {
           }}
         />
 
-        <Drawer.Screen
+        {/* <Drawer.Screen
           name="Browse"
           component={MatchingScreens}
           options={{
@@ -358,7 +354,7 @@ const AppStack = () => {
               <Ionicons name="person" size={22} color={color} />
             ),
           }}
-        />
+        /> */}
         <Drawer.Screen
           name="Maps"
           component={Location}
@@ -435,7 +431,7 @@ const AppStack = () => {
       </Drawer.Navigator>
       <AlanView
         projectid={
-          'ecc5936429f8831a0a3f3bd73ff973822e956eca572e1d8b807a3e2338fdd0dc/stage'
+          'e1813f67671019cee92a6f364cf601e52e956eca572e1d8b807a3e2338fdd0dc/stage'
         }
       />
     </NavigationContainer>

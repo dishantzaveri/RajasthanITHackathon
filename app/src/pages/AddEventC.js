@@ -52,7 +52,7 @@ const AddEventC = () => {
       redirect: 'follow',
     };
 
-    fetch('https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/news/funding/', requestOptions)
+    fetch('https://2d2b-117-250-3-86.in.ngrok.io/news/funding/', requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
@@ -75,9 +75,9 @@ const AddEventC = () => {
   const getStartUps = async () => {
     var config = {
       method: 'get',
-      url: 'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/startup/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/startup/',
       headers: {
-        Authorization: 'Token 05fc1a3f496cac72aecc244ac6fe088d1243cb44',
+        Authorization: 'Token 4d449cb253d428c847fbb11fd394a0933811eb85',
       },
     };
     axios(config)

@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     margin: 25,
-    backgroundColor: '#00CFDE',
+    backgroundColor: '#ABD0DA',
     color: '#fff',
   },
 
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     margin: 10,
-    color: '#00CFDE',
+    color: '#ABD0DA',
     fontWeight: '500',
     marginBottom: height * 0.035,
   },

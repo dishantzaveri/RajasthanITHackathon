@@ -22,10 +22,10 @@ export default function Resume1() {
             <Tab.Navigator
                 initialRouteName="MyResume"
                 screenOptions={{
-                    activeTintColor: "#00CFDE",
+                    activeTintColor: "#ABD0DA",
                     labelStyle: { fontSize: 11 },
-                    style: { backgroundColor: "#00CFDE", marginTop: insets.top },
-                tabBarActiveTintColor: "#00CFDE",
+                    style: { backgroundColor: "#ABD0DA", marginTop: insets.top },
+                tabBarActiveTintColor: "#ABD0DA",
                 tabBarInactiveTintColor: "#000000",
                 tabBarShowLabel: true,
                 
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     title1: {
         fontSize: 13,
         textAlign: 'center',
-        color: '#00CFDE',
+        color: '#ABD0DA',
     },
     container: {
         flex: 1,

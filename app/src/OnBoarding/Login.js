@@ -44,7 +44,7 @@ function Login({navigation}) {
     };
 
     fetch(
-      'https://0b6f-2405-201-6-4da9-e9be-1c7e-2e6a-89a9.in.ngrok.io/account/login/',
+      'https://2d2b-117-250-3-86.in.ngrok.io/account/login/',
       requestOptions,
     )
       .then(response => response.json())
@@ -111,7 +111,7 @@ function Login({navigation}) {
         }}>
         <Text style={styles.textStyle}>Login</Text>
       </TouchableOpacity>
-      <Text style={{fontSize: 20, margin: 5}}>OR</Text>
+      {/* <Text style={{fontSize: 20, margin: 5}}>OR</Text>
       <TouchableOpacity
         style={styles.button}
         onPress={() =>
@@ -128,7 +128,7 @@ function Login({navigation}) {
             })
         }>
         <Text style={styles.textStyle}>Use Your Fingerprint</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <TouchableOpacity
         onPress={() => {
           navigation.navigate('SignUp');

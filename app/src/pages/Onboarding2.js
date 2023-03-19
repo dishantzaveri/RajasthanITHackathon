@@ -9,7 +9,7 @@ import {
   TextInput,
 } from 'react-native';
 import {withTheme, Text, RadioButton, Button} from 'react-native-paper';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo.jpeg';
 import Circle2 from '../assets/circle2.png';
 import {height, width} from '../Consts';
 import {useTheme} from '@react-navigation/native';
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     margin: 25,
-    backgroundColor: '#00CFDE',
+    backgroundColor: '#ABD0DA',
     color: '#fff',
     fontSize: 15,
     fontWeight: 'bold',
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
-    color: '#00CFDE',
+    color: '#ABD0DA',
     fontWeight: '500',
     marginBottom: height * 0.035,
   },

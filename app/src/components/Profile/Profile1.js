@@ -93,7 +93,7 @@ const Profile1 = ({ }) => {
                         <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Hobbies & Interest </Text>
                         <TouchableOpacity>
 
-                            <Text style={{ fontSize: 18, color: '#00CFDE' }}>Add</Text>
+                            <Text style={{ fontSize: 18, color: '#ABD0DA' }}>Add</Text>
                         </TouchableOpacity>
 
                     </View>
@@ -112,7 +112,7 @@ const Profile1 = ({ }) => {
                         <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Key Skills</Text>
                         <TouchableOpacity>
 
-                            <Text style={{ fontSize: 18, color: '#00CFDE' }}>Add</Text>
+                            <Text style={{ fontSize: 18, color: '#ABD0DA' }}>Add</Text>
                         </TouchableOpacity>
 
                     </View>
@@ -134,7 +134,7 @@ const Profile1 = ({ }) => {
                                 <Text style={{ fontSize: 16, fontWeight: 'bold' }}>Basic details</Text>
                                 <TouchableOpacity>
 
-                                    <Icon name="edit" size={20} color="#00CFDE" />
+                                    <Icon name="edit" size={20} color="#ABD0DA" />
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flexDirection: 'column' }}>
@@ -165,7 +165,7 @@ const Profile1 = ({ }) => {
                                 <Text style={{ fontSize: 16, fontWeight: 'bold' }}>Video profile</Text>
                                 <TouchableOpacity >
 
-                                    <Text style={{ fontSize: 16, color: '#00CFDE' }}>Record</Text>
+                                    <Text style={{ fontSize: 16, color: '#ABD0DA' }}>Record</Text>
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flexDirection: 'row' }}>
@@ -182,7 +182,7 @@ const Profile1 = ({ }) => {
                     </View>
                     <View style={styles.card2}>
                         <View style={{ flexDirection: 'column', marginHorizontal: 10 }}>
-                            <Text style={{ fontSize: 10, color: '#00CFDE' }}>My Dashboard</Text>
+                            <Text style={{ fontSize: 10, color: '#ABD0DA' }}>My Dashboard</Text>
                             <View style={styles.card3}>
                                 <View style={{ flexDirection: 'column' }}>
                                     <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -233,7 +233,7 @@ const Profile1 = ({ }) => {
                         <Text style={{ fontSize: 18, fontWeight: 'bold' }}>About me</Text>
                         <TouchableOpacity>
 
-                            <Text style={{ fontSize: 18, color: '#00CFDE' }}>Add</Text>
+                            <Text style={{ fontSize: 18, color: '#ABD0DA' }}>Add</Text>
                         </TouchableOpacity>
                     </View>
                     <Text style={styles.nameInput}>Put forward your education and career journey in a few lines</Text>
@@ -246,7 +246,7 @@ const Profile1 = ({ }) => {
                         <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Key skills </Text>
                         <TouchableOpacity>
 
-                            <Text style={{ fontSize: 18, color: '#00CFDE' }}>Add</Text>
+                            <Text style={{ fontSize: 18, color: '#ABD0DA' }}>Add</Text>
                         </TouchableOpacity>
                     </View>
                     <Text style={styles.nameInput}>Tell recruiters about the tools and softwares you know </Text>
@@ -411,7 +411,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         justifyContent: 'center',
         alignContent: 'center',
-        backgroundColor: '#00CFDE',
+        backgroundColor: '#ABD0DA',
         flexDirection: 'row',
         margin: 10,
         alignContent: 'center',
@@ -429,13 +429,13 @@ const styles = StyleSheet.create({
     button5: {
         width: width * 0.2,
         alignSelf: 'flex-end',
-        backgroundColor: '#00CFDE',
+        backgroundColor: '#ABD0DA',
         margin: 20,
         borderWidth: 1,
         borderRadius: 10,
     },
     label1: {
-        color: '#00CFDE',
+        color: '#ABD0DA',
         fontWeight: '100',
         fontSize: 12,
 
