@@ -34,6 +34,4 @@ urlpatterns = [
     path('Searchstartup/',views.Searchstartup.as_view(),name='Searchstartup'),
     path('prototypeview/',views.prototypeview.as_view(),name='prototypeview'),
     path('PrototypeDetail/',views.PrototypeDetail.as_view(),name='PrototypeDetail'),
-    
-
 ]
