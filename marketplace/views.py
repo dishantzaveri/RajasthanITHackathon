@@ -7,10 +7,6 @@ from rest_framework.response import Response
 from rest_framework.generics import GenericAPIView
 from .models import *
 from .serializers import *
-from django.db.models import Q
-import os
-# from . import custom_permissions
-# from .Utils import Util
 
 ########################Marketplace part begins####################################
 
