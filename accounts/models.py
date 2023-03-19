@@ -92,7 +92,7 @@ class WorkExperience(models.Model):
     company_name = models.CharField(max_length=255)
     location = models.CharField(max_length=255, blank=True, null=True)
     industry = models.CharField(max_length=255, blank=True, null=True)
-    start_date = models.DateField()
+    start_date = models.DateField(blank=True, null=True)
     end_date = models.DateField(null=True,blank=True)
     description = models.TextField(max_length=255, blank=True, null=True)
 
