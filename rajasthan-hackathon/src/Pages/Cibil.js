@@ -3,8 +3,25 @@ import Navbar from "../Components/Navbar";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import { Button, TextField } from "@mui/material";
+import { useEffect } from "react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  PieChart,
+  Pie,
+} from "recharts";
 
 export default function Cibil() {
+  // const monthWiseFunding = {
+  //   label: ["score"],
+  //   percent: [98],
+  //   radius: 2.5,
+  // };
+
   const [json, setJson] = React.useState({
     Age: 0,
     Annual_Income: 0,
@@ -61,7 +78,13 @@ export default function Cibil() {
     Payment_Behaviour_Low_spent_Medium_value_payments: 0,
     Payment_Behaviour_Low_spent_Small_value_payments: 0,
   });
-  const [cibil, setCibil] = React.useState("");
+
+  const [cibil, setCibil] = React.useState(0);
+  // const [monthlyFunding, setMonthlyFunding] = React.useState({
+  //   label: [],
+  //   percent: [],
+  //   radius: 0,
+  // });
 
   const [dataToPost, setDataToPost] = React.useState({
     data: [
@@ -133,6 +156,7 @@ export default function Cibil() {
     { field: "No of Loans", name: "Num_of_Loan" },
   ];
 
+
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -159,12 +183,28 @@ export default function Cibil() {
     fetch("https://2d2b-117-250-3-86.in.ngrok.io/cibil/score/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        console.log(result);
-        console.log(result.data);
+        console.log(result)
         setCibil(result.data);
       })
       .catch((error) => console.log("error", error));
   };
+
+  // useEffect(() => {
+  //   if (monthWiseFunding) {
+  //     let array = [];
+  //     console.log(Object.values(monthWiseFunding)[0]);
+  //     const data = Object.values(monthWiseFunding)[0];
+  //     data.forEach((item, i) => {
+  //       array.push({
+  //         x: monthWiseFunding.percent[i],
+  //         name: monthWiseFunding.label[i],
+  //       });
+  //     });
+  //     console.log(array);
+  //     setMonthlyFunding(array);
+  //   }
+  // }, [monthWiseFunding]);
+
   return (
     <>
       <Navbar />
@@ -219,9 +259,35 @@ export default function Cibil() {
         <Typography variant="body1" color="initial">
           Your cibil score is {cibil}
         </Typography>
-      ) : (
-        ""
-      )}
+      ) : <></>}
+      {/* <div className="h-full w-full flex flex-col justify-center">
+        <h1 className="text-xl font-semibold mb-2">Monthwise Funding</h1>
+        {monthlyFunding && (
+          <div className="h-[350px] w-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart width={500} height={350} data={monthlyFunding}>
+                <Pie
+                  dataKey="x"
+                  data={monthlyFunding}
+                  outerRadius={120}
+                  fill="#7B1FA2"
+                  label
+                />
+                <Tooltip />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        )}
+        {!monthlyFunding && (
+          <div className="h-[350px] animate-pulse">
+            <div className="h-full w-full bg-slate-500 rounded-xl">
+              <div className="w-full h-full flex flex-col justify-center items-center">
+                <h1 className="text-xl mt-2">Loading...</h1>
+              </div>
+            </div>
+          </div>
+        )}
+      </div> */}
     </>
   );
 }

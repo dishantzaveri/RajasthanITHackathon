@@ -143,7 +143,11 @@ function DrawerAppBar(props) {
             TransitionComponent={Fade}
             sx={{ margin: "10px", padding: "10px" }}
           >
-            <Link to="http://127.0.0.1:3001/events" target="_blank">
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="http://127.0.0.1:3001/events"
+              target="_blank"
+            >
               <MenuItem
                 sx={{
                   margin: "10px",
@@ -154,7 +158,11 @@ function DrawerAppBar(props) {
                 Events
               </MenuItem>
             </Link>
-            <Link to="http://127.0.0.1:3001/campaigns" target="_blank">
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="http://127.0.0.1:3001/campaigns"
+              target="_blank"
+            >
               <MenuItem
                 sx={{
                   margin: "10px",
