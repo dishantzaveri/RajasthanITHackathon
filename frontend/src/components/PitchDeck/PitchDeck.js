@@ -330,7 +330,7 @@ export const PitchDeck = () => {
   };
   return (
     <>
-      <button className="w-full bg-purple-gray-500 hover:bg-purple-gray-600 text-white font-bold py-2 px-4 rounded" onClick={() => downloadPPT()}>Download PPT</button>
+      <button className="w-full bg-[#E24748] text-white font-bold py-2 px-4 rounded" onClick={() => downloadPPT()}>Download PPT</button>
     </>
   );
 };

@@ -32,7 +32,7 @@ export default function FormPropsTextFields() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'http://127.0.0.1:8000/account/education/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/education/',
       headers: {
         'Authorization': `Token ${token}`,
       }
@@ -46,7 +46,7 @@ export default function FormPropsTextFields() {
       setList(curr);
       const options = {
         method: 'POST',
-        url: 'http://127.0.0.1:8000/account/education/',
+        url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/education/',
         data: {
           institute: input.institute,
           degree: input.degree,

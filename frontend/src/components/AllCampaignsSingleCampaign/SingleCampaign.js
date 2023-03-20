@@ -53,7 +53,7 @@ const SingleCampaign = ({ data }) => {
                     <progress className='bar' max={data.targetAmount} value={data.collectedAmount}></progress>
                     <div className="action">
                     <button
-							className="donate rounded-full w-[7vw] hover:bg-inherit hover:text-inherit bg-purple-gray-600 text-white transition-all duration-190 "
+							className="donate rounded-full w-[7vw] bg-[#E24748] text-white transition-all duration-190"
 							onClick={() => pay()}
 						>
 							Donate

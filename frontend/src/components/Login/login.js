@@ -63,7 +63,6 @@ const Login = ({ setLogin }) => {
           {/* <div class="text-center">
             <FacebookLogin setLogin={setLogin} />
           </div> */}
-          <hr class="hr-text" data-content="OR" />
           {/* <input
             type="text"
             class="block border border-grey-light w-full p-3 rounded mb-4"
@@ -120,7 +119,7 @@ const Login = ({ setLogin }) => {
             id="submit"
             type="submit"
             onClick={submit}
-            class=" w-full bg-purple-gray-500 hover:bg-purple-gray-600 text-white font-bold py-2 px-4 rounded"
+            class=" w-full bg-[#4D6D96] hover:bg-[#4D6D96] text-white font-bold py-2 px-4 rounded"
           >
             Login
           </button>

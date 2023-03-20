@@ -90,7 +90,7 @@ const style = {
 const Schemes = (scheme) => {
   // var config = {
   //     method: 'get',
-  //     url: 'http://127.0.0.1:8000/news/scheme/',
+  //     url: 'https://2d2b-117-250-3-86.in.ngrok.io/news/scheme/',
   //     headers: {
   //       'Authorization': 'Token 8ee14cbf8c09c0baeae939b60041b703ed240e82'
   //     }

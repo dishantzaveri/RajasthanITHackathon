@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import SearchIcon from "@material-ui/icons/Search";
-import Navbar from "../components/Navbar";
-import MentorsList from "../components/MentorsList/MentorsList";
-import SearchBar from "material-ui-search-bar";
-import { Grid } from "@mui/material/node";
-import SideNavbar from "../components/SideNavbar/SideNavbar";
-import { useGetMentorsListQuery } from "../features/list/listAPISlice";
-import { VscLoading } from "react-icons/vsc";
 import Header from "../components/Header/Header";
 import axios from "axios";
 import Location from "@material-ui/icons/LocationOnOutlined";
@@ -20,9 +12,10 @@ const Mentor = ({ mentor }) => {
         <img
           src={
             mentor?.profile_pic
-              ? `http://127.0.0.1:8000/${mentor.profile_pic}`
+              ? `https://2d2b-117-250-3-86.in.ngrok.io/${mentor.profile_pic}`
               : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png"
           }
+          alt="mentor"
           style={{
             objectFit: "contain",
             borderRadius: 100,
@@ -64,7 +57,6 @@ const Mentor = ({ mentor }) => {
 };
 
 export default function Mentors() {
-  const { data, isLoading } = useGetMentorsListQuery();
   const { token } = useSelector((state) => state.auth);
   const [mentors, setMentors] = useState([]);
   const [expertise, setExpertise] = useState("");
@@ -74,7 +66,7 @@ export default function Mentors() {
   const getMentorsList = async () => {
     var config = {
       method: "get",
-      url: "http://127.0.0.1:8000/account/mentors_list/",
+      url: "https://2d2b-117-250-3-86.in.ngrok.io/account/mentors_list/",
       headers: {
         Authorization: `Token ${token}`,
       },
@@ -95,7 +87,7 @@ export default function Mentors() {
     formData.append("expertise", expertise);
     var config = {
       method: "post",
-      url: "http://127.0.0.1:8000/account/search_mentors/",
+      url: "https://2d2b-117-250-3-86.in.ngrok.io/account/search_mentors/",
       headers: {
         Authorization: `Token ${token}`,
       },
@@ -114,7 +106,7 @@ export default function Mentors() {
   return (
     <>
       <Header />
-      <div className="px-32 bg-gradient-to-r from-[#2eb6b8] via-blue-300  to-[#DAF0F4] w-full h-64 relative ">
+      <div className="px-32 w-full h-64 relative ">
         <div className="py-[80px] flex">
           <div className="content ">
             <h1 className="text-5xl">All the Mentors</h1>

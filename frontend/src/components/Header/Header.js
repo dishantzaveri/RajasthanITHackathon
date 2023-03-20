@@ -3,16 +3,11 @@ import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { logout } from "../../features/auth/authSlice";
-import axios from "axios";
-import InputLabel from "@mui/material/InputLabel";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
-import { Dropdown } from "semantic-ui-react";
-import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
 import logo from "../../assets/logo2.png";
+import Mentoring from './Mentoring.js'
 
 const Header = ({ event }) => {
   const languages = [
@@ -25,14 +20,22 @@ const Header = ({ event }) => {
   ];
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorEl1, setAnchorEl1] = React.useState(null);
+  const [anchorEl2, setAnchorEl2] = React.useState(null);
+  const [age, setAge] = React.useState('');
   const { is_mentor } = useSelector((state) => state.auth);
   const open = Boolean(anchorEl);
   const open1 = Boolean(anchorEl1);
+  const open2 = Boolean(anchorEl);
+
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClick1 = (event) => {
     setAnchorEl1(event.currentTarget);
+  };
+  const handleClick2 = (event) => {
+    setAnchorEl2(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
@@ -40,9 +43,14 @@ const Header = ({ event }) => {
   const handleClose1 = () => {
     setAnchorEl1(null);
   };
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+
   const dispatch = useDispatch();
   const { token } = useSelector((state) => state.auth);
-  console.log(token);
 
   const [activities, setActivities] = React.useState("");
 
@@ -63,10 +71,10 @@ const Header = ({ event }) => {
   };
   const disabled = localStorage.getItem("disabled");
   return (
-    <div className="px-12 py-2 flex justify-between items-center border-b">
+    <div className="px-12 py-2 bg-[#D8E8EB] flex justify-between items-center border-b">
       {/* <h1>{t('welcome')}</h1> */}
       <Link className="font-bold " to="/">
-        <img src={logo} style={{ width: "100px" }} />
+        <img src={logo} style={{ width: "150px" }} />
       </Link>
       {window.location.pathname === "/" && (
         <select value={lang} onChange={handleLanguage}>
@@ -80,108 +88,21 @@ const Header = ({ event }) => {
         </select>
       )}
 
-      {/* <label>{t('choose')}</label> */}
-      {/* {token && (
-				<div className="px-64 flex flex-row justify-between items-center flex-1">
-                   
-					<Link to="/feed">
-						<h1 className="font-medium text-lg"><label>{t('home')}</label></h1>
-					</Link>
-
-					<Link to="/mentors">
-						<h1 className="font-medium text-lg"><label>{t('startups')}</label></h1>
-					</Link>
-
-					<Link to="/chat">
-						<h1 className="font-medium text-lg"><label>{t('chat')}</label></h1>
-					</Link>
-
-					<Link to="/myProfile">
-						<h1 className="font-medium text-lg"><label>{t('profile')}</label></h1>
-					</Link>
-
-					
-                    <div>
-      <button
-        id="fade-button"
-        aria-controls={open ? 'fade-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-        style={{color:"black", fontWeight:500, fontSize:"1.125rem", lineHeight:"1.75rem"}}
-      >
-        <label>{t('activities')}</label>
-      </button>
-      <Menu
-        id="fade-menu"
-        fullwidth
-        MenuListProps={{
-          'aria-labelledby': 'fade-button',
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        TransitionComponent={Fade}
-        sx={{margin:"10px", padding:"10px"}}
-      >
-        <Link to="/events">
-        <MenuItem   sx={{margin:"10px", padding:"10px", width:"120px"}}>Events</MenuItem>
-        </Link>
-        <Link to="/campaigns">
-        <MenuItem  sx={{margin:"10px", padding:"10px", width:"120px"}}>Campaigns</MenuItem>
-        </Link>
-      </Menu>
-    </div>
-				</div>
-			)} */}
-
-      {/* <Link className="font-bold " to="/">
-				<img src={logo} style={{height:"80px", width:"100px"}} />
-			</Link> */}
-
-      {/* {token && ( */}
-      {/* <div className="header__search">
-          <SearchIcon />
-          <input type="text" placeholder="Search bar" />
-        </div> */}
-      {/* )} */}
-
-      {/* <div className={`flex gap-4 ${token && "hidden"} items-center`}>
-          <Link className="font-semibold text-xl" to="/registermentor">
-            Become a Mentor
-          </Link>
-          <Link className="font-semibold text-xl" to="/registermentor">
-            Find a Mentor
-          </Link>
-          <Link to="/registermentee">
-            <button className="uppercase rounded-full border w-[8vw] py-2 hover:bg-purple-gray-600 hover:text-white transition-all duration-150">
-              Sign Up
-            </button>
-          </Link>
-          <Link to="/login">
-            <button className="uppercase rounded-full border w-[8vw] py-2 hover:bg-inherit hover:text-inherit bg-purple-gray-600 text-white transition-all duration-150">
-              Log in
-            </button>
-          </Link>
-        </div> */}
-
       {token ? (
         <div className="flex flex-row justify-end items-center flex-1 gap-8">
           <Link to="/feed">
-            <h1 className="font-medium text-lg">{t("home")}</h1>
+            <h1 className="font-medium text-xl">{t("home")}</h1>
           </Link>
           {is_mentor ? (
             <Link to="/startups">
-              <h1 className="font-medium text-lg">{t("startups")}</h1>
+              <h1 className="font-medium text-xl">{t("startups")}</h1>
             </Link>
           ) : (
-            <Link to="/mentors">
-              <h1 className="font-medium text-lg">{t("mentors")}</h1>
-            </Link>
+            <Mentoring />
           )}
 
           <Link to="/chat">
-            <h1 className="font-medium text-lg">{t("chat")}</h1>
+            <h1 className="font-medium text-xl">{t("chat")}</h1>
           </Link>
 
           <div>
@@ -194,11 +115,11 @@ const Header = ({ event }) => {
               style={{
                 color: "black",
                 fontWeight: 500,
-                fontSize: "1.125rem",
+                fontSize: "1.28rem",
                 lineHeight: "1.75rem",
               }}
             >
-              {t("activities")}
+              {t("activities")} 
             </button>
             <Menu
               id="fade-menu"
@@ -226,34 +147,13 @@ const Header = ({ event }) => {
                   {t("campaigns")}
                 </MenuItem>
               </Link>
-              <Link to="/matchedmentors">
-                <MenuItem
+              {/* <Link to="/marketplace"> */}
+              <MenuItem
                   sx={{ margin: "10px", padding: "10px", width: "140px" }}
                 >
-                  {t("match")}
+                  Marketplace
                 </MenuItem>
-              </Link>
-              <Link to="/schemes">
-                <MenuItem
-                  sx={{ margin: "10px", padding: "10px", width: "140px" }}
-                >
-                  {t("schemes")}
-                </MenuItem>
-              </Link>
-              <Link to="/object-detection">
-                <MenuItem
-                  sx={{ margin: "10px", padding: "10px", width: "140px" }}
-                >
-                  Object Detection
-                </MenuItem>
-              </Link>
-              <Link to="/sign-detection">
-                <MenuItem
-                  sx={{ margin: "10px", padding: "10px", width: "120px" }}
-                >
-                  Sign Detection
-                </MenuItem>
-              </Link>
+              {/* </Link> */}
             </Menu>
           </div>
 
@@ -267,7 +167,7 @@ const Header = ({ event }) => {
               style={{
                 color: "black",
                 fontWeight: 500,
-                fontSize: "1.125rem",
+                fontSize: "1.28rem",
                 lineHeight: "1.75rem",
               }}
             >
@@ -275,7 +175,6 @@ const Header = ({ event }) => {
             </button>
             <Menu
               id="fade-menu"
-              fullwidth
               MenuListProps={{
                 "aria-labelledby": "fade-button",
               }}
@@ -292,23 +191,14 @@ const Header = ({ event }) => {
                   {t("myProfile")}
                 </MenuItem>
               </Link>
-              {/* <Link to="/campaigns"> */}
               <MenuItem
                 onClick={() => dispatch(logout())}
                 sx={{ margin: "10px", padding: "10px", width: "120px" }}
               >
                 {t("logout")}
               </MenuItem>
-              {/* </Link> */}
             </Menu>
           </div>
-
-          {/* <button
-            className="uppercase rounded-full border w-[8vw] py-2 hover:bg-inherit hover:text-inherit bg-purple-gray-600 text-white transition-all duration-150"
-            onClick={() => dispatch(logout())}
-          >
-            Log out
-          </button> */}
         </div>
       ) : (
         <div className={`flex gap-4 ${token && "hidden"} items-center`}>

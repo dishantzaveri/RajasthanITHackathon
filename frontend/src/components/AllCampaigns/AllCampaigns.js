@@ -38,13 +38,13 @@ const AllCampaigns = () => {
         <div className="">
           <Header />
         <div className="">
-          <div className="px-32 bg-gradient-to-r from-[#2eb6b8] via-blue-300  to-[#DAF0F4] w-full h-64 relative">
+          <div className="px-32 w-full h-64 relative">
         <div className="py-[80px] flex">
         <div className="content">
           <h1 className="text-5xl">Funding Campaigns</h1>
           <h1 className="text-2xl mt-4 text-slate-700">Help the Entrepreneurs by Donating in their Startups</h1>
           </div>
-          <button onClick={handleOpen} className="ml-auto bg-gradient-to-r from-[#c0edf5] via-blue-300 to-[#2eb6b8] text-white self-end p-2 px-4 rounded-2xl flex items-center"><MdAddCircle /> Create Campaign</button>
+          <button onClick={handleOpen} className="ml-auto bg-[#E24748] text-white self-end p-2 px-4 rounded-2xl flex items-center"><MdAddCircle /> Create Campaign</button>
         <Modal
         open={open}
         onClose={handleClose}
@@ -84,7 +84,7 @@ const AllCampaigns = () => {
                 <option>Entertainment</option>
               </select>
             </div>
-            <button className="text-white rounded-3xl bg-purple-gray-600 p-2">
+            <button className="text-white rounded-3xl bg-[#E24748] p-2">
               Search
             </button>
           </div>
@@ -95,7 +95,7 @@ const AllCampaigns = () => {
                             <div> 
                                 <h1 className="text-center p-4">  Fetching Campaigns... </h1> 
                             </div> : 
-                            <div  className="grid grid-cols-3 gap-[5%]">
+                            <div  className="grid grid-cols-3 -[5%]">
                                 {data?.map((x) => <SingleCampaign data={x}/>)}
                             </div>
                         }

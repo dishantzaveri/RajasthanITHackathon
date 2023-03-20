@@ -41,6 +41,7 @@ import ObjectDetection from "./pages/ObjectDetection";
 import SignDetection from "./pages/SignDetection";
 import Startups from "./components/Startups/Startups";
 import Schemes from "./components/GovernmentSchemes/GovernmentSchemes";
+import Funding from "./pages/Funding";
 
 const languages = [
   { value: "", text: "Options" },
@@ -111,6 +112,7 @@ function App() {
               path="/requestedentrepreneurs"
               element={<MatchedEntrepreneurs />}
             />
+            <Route path="/funding" element={<Funding />} />
             <Route path="/schemes" element={<Schemes />} />
           </Route>
         </Routes>

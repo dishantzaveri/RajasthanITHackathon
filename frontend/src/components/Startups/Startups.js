@@ -56,7 +56,7 @@ export default function Startups() {
   const getMentorsList = async () => {
     var config = {
       method: "get",
-      url: "http://127.0.0.1:8000/account/startups_list/",
+      url: "https://2d2b-117-250-3-86.in.ngrok.io/account/startups_list/",
       headers: {
         Authorization: `Token ${token}`,
       },

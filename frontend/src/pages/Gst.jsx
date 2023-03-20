@@ -118,7 +118,7 @@ const Gst = () => {
     //   redirect: 'follow'
     // };
 
-    // fetch("http://127.0.0.1:8000/account/gstverify/", requestOptions)
+    // fetch("https://2d2b-117-250-3-86.in.ngrok.io/account/gstverify/", requestOptions)
     //   .then(response => response.text())
     //   .then(result => console.log(result))
     //   .catch(error => console.log('error', error));

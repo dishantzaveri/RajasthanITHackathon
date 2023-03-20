@@ -51,7 +51,7 @@ export default function FormPropsTextFields() {
   const getStartups = () => {
     let config = {
       method: 'get',
-      url: 'http://127.0.0.1:8000/account/startup/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/startup/',
       headers: { 
         'Authorization': 'Token ' + token
       }
@@ -68,7 +68,7 @@ export default function FormPropsTextFields() {
   // const postGst = () => {
   //   let config = {
   //     method: 'post',
-  //     url: 'http://127.0.0.1:8000/account/gstverify/',
+  //     url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/gstverify/',
   //     headers: { 
   //       'Authorization': 'Token ' + token
   //     },
@@ -105,7 +105,7 @@ export default function FormPropsTextFields() {
 
       var config = {
         method: 'post',
-        url: 'http://127.0.0.1:8000/account/panverify/',
+        url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/panverify/',
         headers: { 
           'Authorization': 'Token '+token, 
         },

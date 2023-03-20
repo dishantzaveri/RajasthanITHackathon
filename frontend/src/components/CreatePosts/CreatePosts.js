@@ -80,7 +80,7 @@ const CreatePosts = () => {
             };
 
             fetch(
-              "http://127.0.0.1:8000/api/posts/",
+              "https://2d2b-117-250-3-86.in.ngrok.io/api/posts/",
               requestOptions
             )
               .then((response) => response.text())
@@ -121,7 +121,7 @@ const CreatePosts = () => {
           };
 
           fetch(
-            "http://127.0.0.1:8000/api/posts/",
+            "https://2d2b-117-250-3-86.in.ngrok.io/api/posts/",
             requestOptions
           )
             .then((response) => response.text())

@@ -19,7 +19,7 @@ const CommentBody = ({comment, comments}) => {
   const getComments = comment => {
     var config = {
       method: 'get',
-      url: 'http://127.0.0.1:8000/api/comments/'+comment+'/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/api/comments/'+comment+'/',
       headers: { 
         'Authorization': 'Token '+token,
       },
@@ -42,7 +42,7 @@ const CommentBody = ({comment, comments}) => {
 
     var config = {
       method: 'post',
-      url: 'http://127.0.0.1:8000/api/comments/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/api/comments/',
       headers: { 
         'Authorization': 'Token '+token, 
       },
@@ -95,7 +95,7 @@ const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
     console.log(id)
     var config = {
       method: 'post',
-      url: 'http://127.0.0.1:8000/api/post-like/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/api/post-like/',
       headers: { 
         'Authorization': 'Token '+token, 
       },
@@ -115,7 +115,7 @@ const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
   const dislike = () => {
     var config = {
       method: 'delete',
-      url: 'http://127.0.0.1:8000/api/post-like/'+likedId,
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/api/post-like/'+likedId,
       headers: { 
         'Authorization': 'Token '+token, 
       },
@@ -135,7 +135,7 @@ const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
   const getPosts = () => {
     var config = {
       method: 'get',
-      url: 'http://127.0.0.1:8000/api/posts/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/api/posts/',
       headers: { 
         'Authorization': 'Token '+token, 
       },

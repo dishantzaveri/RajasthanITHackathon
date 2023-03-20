@@ -1,13 +1,6 @@
 import React, { useContext } from "react";
-// import Navbar from '../Navbar/Navbar';
 import "./fullSingle.css";
 import { NavLink, useLocation } from "react-router-dom";
-import Navbar from "../Navbar";
-import Header from "../Header/Header";
-// import Footer from '../Footer/Footer';
-// import Loader from '../Loader/Loader';
-// import { AllCampaignsContext } from '../../contexts/allCampaignsContext';
-// import NotFound from '../404/404';
 
 const FullSingleCampaign = (props) => {
 	const location = useLocation();
@@ -45,8 +38,6 @@ const FullSingleCampaign = (props) => {
 	// if (parseInt(x.id) === parseInt(id)) {
 	return (
 		<div>
-			{/* <Navbar /> */}
-			<Header />
 			<div className="profileWrapper">
 				<div className="heading">
 					<div className="policyName">
@@ -112,7 +103,7 @@ const FullSingleCampaign = (props) => {
 							Pay
 						</button> */}
 						<button
-							className="uppercase rounded-full border w-[8vw] py-2 hover:bg-inherit hover:text-inherit bg-purple-gray-600 text-white transition-all duration-150"
+							className="uppercase rounded-full border w-[8vw] py-2 bg-[#E24748] text-white transition-all duration-150"
 							onClick={() => pay()}
 						>
 							Donate

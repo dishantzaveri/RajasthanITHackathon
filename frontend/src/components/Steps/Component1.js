@@ -26,7 +26,7 @@ export default function FormPropsTextFields() {
   useEffect(() => {
     const options = {
       method: 'GET',
-      url: 'http://127.0.0.1:8000/account/experience/',
+      url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/experience/',
       headers: {
         'Authorization': `Token ${token}`,
       }
@@ -84,7 +84,7 @@ export default function FormPropsTextFields() {
 
       // var config = {
       //   method: 'POST',
-      //   url: 'http://127.0.0.1:8000/account/experience/',
+      //   url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/experience/',
       //   headers: { 
       //     'Authorization': 'Token ' + token, 
       //     'Cookie': 'csrftoken=ONSFu7hzHlkazVZWCUFueznNNNq0ZUfY',
@@ -116,7 +116,7 @@ export default function FormPropsTextFields() {
       }
       var config = {
         method: 'post',
-        url: 'http://127.0.0.1:8000/account/experience/',
+        url: 'https://2d2b-117-250-3-86.in.ngrok.io/account/experience/',
         headers: { 
           'Authorization': 'Token '+token,
         },

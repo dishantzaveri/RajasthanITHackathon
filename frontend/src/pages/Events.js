@@ -17,9 +17,8 @@ import Header from "../components/Header/Header";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 
 const Event = ({ event }) => {
-  useEffect(() => {
-    console.log(event.image);
-  }, []);
+
+
   return (
     <div>
       <img
@@ -64,7 +63,6 @@ const style = {
   top: "80%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  // width: 400,
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -73,107 +71,18 @@ const style = {
 };
 
 const Events = () => {
-  // const [events, setEvents] = useState([]);
-  // useEffect(() => {
-  //   getEvents();
-  // }, []);
 
-  // const getEvents = async () => {
-  //   const res = await axios.get(
-  //     "http://127.0.0.1:8000/api/session/"
-  //   );
-
-  //   console.log(res.data);
-  //   setEvents(res.data);
-  // };
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const { data, isLoading, error } = useGetEventsQuery();
-  // const Header = () => {
-  //   const dispatch = useDispatch();
-  //   const { token } = useSelector((state) => state.auth);
-  //   console.log(token);
 
-  // return (
-  //   <div className="px-24 py-4 flex justify-between items-center border-b">
-  //     <Link className="font-bold text-3xl" to="/">
-  //       mentoree
-  //     </Link>
-  {
-    /* {token && ( */
-  }
-  {
-    /* <div className="header__search">
-          <SearchIcon />
-          <input type="text" placeholder="Search bar" />
-        </div> */
-  }
-  {
-    /* )} */
-  }
+  console.log(data)
 
-  {
-    /* <div className={`flex gap-4 ${token && "hidden"} items-center`}>
-          <Link className="font-semibold text-xl" to="/registermentor">
-            Become a Mentor
-          </Link>
-          <Link className="font-semibold text-xl" to="/registermentor">
-            Find a Mentor
-          </Link>
-          <Link to="/registermentee">
-            <button className="uppercase rounded-full border w-[8vw] py-2 hover:bg-purple-gray-600 hover:text-white transition-all duration-150">
-              Sign Up
-            </button>
-          </Link>
-          <Link to="/login">
-            <button className="uppercase rounded-full border w-[8vw] py-2 hover:bg-inherit hover:text-inherit bg-purple-gray-600 text-white transition-all duration-150">
-              Log in
-            </button>
-          </Link>
-        </div> */
-  }
-  // {token && (
-  //   <div className="px-64 flex flex-row justify-between items-center  flex-1">
-  //     {/* // <div className="flex flex-row justify-content items-center flex-1"> */}
-  //     <Link to="/feed">
-  //       <h1 className="font-medium text-lg">Home</h1>
-  //     </Link>
-
-  //     <h1 className="font-medium text-lg">Mentors</h1>
-
-  //     <Link to="/chat">
-  //       <h1 className="font-medium text-lg">Chat</h1>
-  //     </Link>
-
-  //     <Link to="/myProfile">
-  //       <h1 className="font-medium text-lg">Profile</h1>
-  //     </Link>
-
-  {
-    /* <HeaderOption Icon={NotificationsIcon} title="Notifications" /> */
-  }
-  {
-    /* <HeaderOption avatar={user.photoUrl} title="me" /> */
-  }
-  {
-    /* </div> */
-  }
-  //         </div>
-  //       )}
-  //       <button
-  //         className="uppercase rounded-full border w-[8vw] py-2 hover:bg-inherit hover:text-inherit bg-purple-gray-600 text-white transition-all duration-150"
-  //         onClick={() => dispatch(logout())}
-  //       >
-  //         Log out
-  //       </button>
-  //     </div>
-  //   );
-  // };
   return (
     <div>
       <Header />
-      <div className="px-32 bg-gradient-to-r from-[#2eb6b8] via-blue-300  to-[#DAF0F4] w-full h-64 relative ">
+      <div className="px-32 w-full h-64 relative ">
         <div className="py-[80px] flex">
           <div className="content ">
             <h1 className="text-5xl">Events by Top Mentors</h1>
@@ -183,7 +92,7 @@ const Events = () => {
           </div>
           <button
             onClick={handleOpen}
-            className="create-button bg-gradient-to-r from-[#c0edf5] via-blue-300  to-[#2eb6b8] text-white self-end p-2 px-4 rounded-2xl ml-[37%] "
+            className="create-button bg-[#E24748] text-white self-end p-2 px-4 rounded-2xl ml-[37%] "
           >
             <AddCircleIcon /> Create Event
           </button>
@@ -225,7 +134,7 @@ const Events = () => {
                 <option>Entertainment</option>
               </select>
             </div>
-            <button className="text-white rounded-3xl bg-purple-gray-600 p-2">
+            <button className="text-white rounded-3xl bg-[#E24748] p-2">
               Search
             </button>
           </div>

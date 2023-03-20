@@ -42,7 +42,7 @@ const SingleMentor = () => {
 				<div className="flex items-center pb-4">
 					<img
 						className="w-[150px] h-[150px] rounded-full object-cover self-center"
-						src={'http://127.0.0.1:8000/'+mentor.profile_pic}
+						src={'https://2d2b-117-250-3-86.in.ngrok.io/'+mentor.profile_pic}
 					/>
 					<div className="ml-5">
 						<h1 className="font-extrabold text-[35px] cursor-pointer ml-4 self-center">

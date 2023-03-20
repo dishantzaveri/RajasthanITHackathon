@@ -7,21 +7,17 @@ import { useSelector } from "react-redux";
 import { useGetProfileQuery } from "../features/profile/profileAPISlice";
 import Header from "../components/Header/Header";
 import { Box, Modal } from "@mui/material/node";
-import CreateCampaigns from "../CreateCampaigns/CreateCampaigns";
 import { useGetStartupsQuery } from "../features/gst/gstAPISlice";
 import { Link } from "react-router-dom";
-import { base64 } from "ethers/lib/utils";
 const style = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  // width: 400,
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-  // overflow:"scroll"
 };
 const Startup = ({ startup }) => {
   const [idCardBase64, setIdCardBase64] = useState("");
@@ -113,21 +109,48 @@ const EditStartup = ({ data }) => {
 };
 const Account = () => {
   const { is_entrepreneur, email } = useSelector((state) => state.auth);
+  const [experience, setExperience] = useState();
+  const [education, setEducation] = useState();
   const { data, isLoading, error } = useGetProfileQuery(
     is_entrepreneur ? "entrepreneur" : "mentor"
   );
+  var myHeaders = new Headers();
+  myHeaders.append(
+    "Authorization",
+    `Token ${JSON.parse(localStorage.getItem("user")).token}`
+  );
+  var requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow",
+  };
   const { data: startups } = useGetStartupsQuery();
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  console.log(data, startups);
   useEffect(() => {
+    fetch("https://2d2b-117-250-3-86.in.ngrok.io/account/experience", requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result);
+        setExperience(result);
+      })
+      .catch((error) => console.log("error", error));
+
+    fetch("https://2d2b-117-250-3-86.in.ngrok.io/account/education", requestOptions)
+      .then((response) => response.json())
+      .then((result2) => {
+        console.log(result2);
+        setEducation(result2)
+      })
+      .catch((error) => console.log("error", error));
     console.log(data, startups);
   }, [data, startups]);
 
   return (
     <div>
       <Header />
-      <div className="px-64 bg-gradient-to-r from-[#2eb6b8] via-blue-300  to-[#DAF0F4] w-full h-64 relative">
+      <div className="px-64 w-full h-64 relative">
         <div className="flex justify-between absolute  top-[100px] ">
           <div className="shadow bg-white shadow-gray-300 p-8 flex flex-col rounded h-fit">
             <img
@@ -162,8 +185,11 @@ const Account = () => {
               </div>
               <div>
                 <p className="font-semibold text-base">Experience : </p>
-                {data?.experience?.map((exp) => (
+                {experience?.map((exp) => (
                   <>
+                    <p>
+                      <h2> {exp.id} </h2>
+                    </p>
                     <p>
                       <span className="font-semibold">Company</span> :{" "}
                       {exp.company_name}
@@ -189,17 +215,17 @@ const Account = () => {
               </div>
               <div className="mt-4">
                 <p className="font-semibold text-base">Education : </p>
-                {data?.education?.map((edu) => (
+                {education?.map((edu) => (
                   <>
                     <p>
                       <span className="font-semibold">College</span> :{" "}
                       {edu.institute}
                     </p>
-                    <p>
+                    {/* <p>
                       <span className="font-semibold">Year</span> :{" "}
                       {edu.start_date.split("-")[0]} -{" "}
                       {edu.end_date.split("-")[0]}
-                    </p>
+                    </p> */}
                     <p>
                       <span className="font-semibold">Course</span> :{" "}
                       {edu.degree} in {edu.study_field}
