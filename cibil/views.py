@@ -35,20 +35,23 @@ def CibilScore(request):
             scal_test = loaded_scalar.transform(new_data.values)
             pred_new = loaded_model.predict(scal_test)
             result = str(pred_new[0])
-
-            if result == 0:
-                 result = random.randint(150,500) 
-
-            elif result == 1:
-                 result = random.randint(500,750)
-
-            elif result == 3:
-                 result = random.randint(750,900) 
-
+            score = 0 
             print(result)
+
+            if result == '0':
+                 print('hi')
+                 score = random.randint(150,500) 
+
+            elif result == '1':
+                 score = random.randint(500,750)
+
+            elif result == '2':
+                 score = random.randint(750,900) 
+
+            print(score)
 
             # return JsonResponse(pred_new)
             sam = {
-                  'data' : result
+                  'data' : score
             }
             return JsonResponse(sam)
