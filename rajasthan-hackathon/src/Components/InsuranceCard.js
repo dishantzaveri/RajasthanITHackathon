@@ -4,7 +4,7 @@ import React from 'react'
 function TaskCard({ taskName, image, btnTxt }) {
   return (
     <>
-      <Card >
+      <Card>
         <CardContent sx={{ padding: '20px' }}>
           <Grid
             container
@@ -16,7 +16,26 @@ function TaskCard({ taskName, image, btnTxt }) {
           >
             <Grid item md={8}>
               <h3 style={{ margin: '0', padding: '0' }}>{taskName}</h3>
-              <Button sx={{ padding: '0' }}>{btnTxt}</Button>
+              <Button
+                sx={{
+                  // backgroundColor: '#E24748',
+                  // border: '1px solid #E24748',
+                  color: '#2F3A56',
+                  marginTop: '10px',
+                  // color: 'white',
+                  // padding: 0,
+                  ':hover': {
+                    bgcolor: '#2F3A56',
+                    transition: '0.7s',
+                    color: 'white',
+                    border: '0px solid #2F3A56',
+
+                    // color: 'black',
+                  },
+                }}
+              >
+                {btnTxt}
+              </Button>
             </Grid>
             <Grid
               md={4}
@@ -29,8 +48,8 @@ function TaskCard({ taskName, image, btnTxt }) {
             >
               <img
                 style={{
-                  width: '100px',
-                  height: '100px',
+                  width: '90px',
+                  height: '90px',
                   borderRadius: '2px',
                   objectFit: 'cover',
                 }}

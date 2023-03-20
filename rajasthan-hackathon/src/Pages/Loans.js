@@ -1,6 +1,8 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
 import Navbar from '../Components/Navbar'
+import LoanTypes from '../Components/LoanTypes'
+
 
 
 const Loans = () => {
@@ -32,6 +34,9 @@ const Loans = () => {
           We have a provision for various kinds of loans which might suit your
           needs.
         </Typography>
+      </div>
+      <div sx={{marginInline: '15%'}}>
+        <LoanTypes />
       </div>
       
     </>

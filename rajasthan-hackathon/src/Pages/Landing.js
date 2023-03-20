@@ -29,7 +29,7 @@ const Landing = () => {
           </Typography>
           <Typography variant="h2" color="initial">
             All your business in one app.
-          </Typography>
+          </Typography> 
         </div>
       </Slide>
       <Slide direction="up" in={checked} mountOnEnter unmountOnExit>
@@ -47,23 +47,29 @@ const Landing = () => {
         </div>
       </Slide>
 
-      <Button 
-        variant="text"
-        color="primary"
-        sx={{
-          backgroundColor: '#E24748',  
-          marginTop: '30px',
-          color: 'white',
-          ':hover': {
-            bgcolor: '#2F3A56',
-            transition: '0.7s',
-            // color: 'black',
-          },
-          padding: '15px',
-        }}
-      >
-        Browse <span> <b>→</b> </span>
-      </Button>
+      <Slide direction="up" in={checked} mountOnEnter unmountOnExit>
+        <Button
+          variant="text"
+          color="primary"
+          sx={{
+            backgroundColor: '#E24748',
+            marginTop: '30px',
+            color: 'white',
+            ':hover': {
+              bgcolor: '#2F3A56',
+              transition: '0.7s',
+              // color: 'black',
+            },
+            padding: '15px',
+          }}
+        >
+          Browse{' '}
+          <span>
+            {' '}
+            <b>→</b>{' '}
+          </span>
+        </Button>
+      </Slide>
 
       {/* <Loans /> */}
     </>

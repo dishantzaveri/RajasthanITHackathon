@@ -9,36 +9,37 @@ const TasksArray = [
   {
     id: 0,
     image:
-      'https://media.istockphoto.com/vectors/wifi-icon-vector-id1261027671?k=20&m=1261027671&s=612x612&w=0&h=qf-Jf_VNhy3Wnilf8QAcE0Q9q7rA8CcCp96XJ5nbHME=',
-    taskName: 'How to connect to WiFi?',  
-    btnTxt: 'Learn Now',
+      'https://www.kindpng.com/picc/m/217-2178735_blue-insurance-icon-png-transparent-png.png',
+    taskName: 'Jurisdiction Insurance',
+    btnTxt: 'Apply Now',
   },
   {
     id: 1,
-    image: 'https://static.thenounproject.com/png/879820-200.png',
-    taskName: 'How toggle between airplane mode?',
-    btnTxt: 'Learn Now',
+    image:
+      'https://www.nicepng.com/png/detail/208-2081015_free-icons-png-life-insurance-icon-png.png',
+    taskName: 'Life Insurance',
+    btnTxt: 'Apply Now',
   },
   {
     id: 2,
     image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOrEFabfHJvMm_K4ATHeRUcy_FVe0dfzkxZbEFyTXAmEAEa5pfBcMmWoeb0cUngNW6kZw&usqp=CAU',
-    taskName: 'How to connect devices with Bluetooth?',
-    btnTxt: 'Learn Now',
+      'https://i.pinimg.com/originals/dd/ab/65/ddab65c29aeaedb3847a9201f352e072.jpg',
+    taskName: 'Health Insurance',
+    btnTxt: 'Apply Now',
   },
   {
     id: 3,
     image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsisauNUF_UGXBzoZf1Y3KizSnwmgg0sQqA&usqp=CAU',
-    taskName: 'How to share photos using blutooth?',
-    btnTxt: 'Learn Now',
+      'https://c8.alamy.com/zooms/9/a81bb1d874544fbab04345639a548904/p8hkxg.jpg',
+    taskName: 'Housing Insurance',
+    btnTxt: 'Apply Now',
   },
   {
     id: 4,
     image:
-      'https://www.howtogeek.com/wp-content/uploads/2020/09/tap-for-flashlight-hero.png?height=200p&trim=2,2,2,2',
-    taskName: 'How to turn on flashlight?',
-    btnTxt: 'Learn Now',
+      'https://www.pngkit.com/png/detail/208-2081271_car-insurance-car-insurance-icon-blue.png',
+    taskName: 'Auto Insurance',
+    btnTxt: 'Apply Now',
   },
 ]
 
@@ -46,7 +47,8 @@ function Tasks() {
   return (
     <>
      <div sx={{ alignItems: 'left' , marginInline: '15%'}}>
-      <h4>Daily Tasks</h4>
+      {/* <h4>Daily Tasks</h4> */}
+      <h4></h4>
       <Swiper
         slidesPerView={1}
         breakpoints={{
@@ -67,7 +69,7 @@ function Tasks() {
       >
         {TasksArray.map((task) => {
           return (
-            <div sx={{maxWidth: '400px'}}>
+            <div sx={{width: '400px'}}>
             <SwiperSlide key={task.id} sx={{marginInline: "15%"}}>
               <InsuranceCard
                 taskName={task.taskName}
