@@ -19,10 +19,10 @@ npm run ios
 
 # APP PREVIEW
 <p float="left">
-  <img src="https://i.postimg.cc/bJF5mNxR/Whats-App-Image-2023-03-21-at-4-01-48-AM.jpg" width = "250">
-  <img src="https://i.postimg.cc/0QN3GJwQ/Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg" width = "250">
-  <img src="https://i.postimg.cc/d3kxpPnc/Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg" width = "250">
-  <img src="https://i.postimg.cc/J7SrnRfJ/Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg" width = "250">
+  <img src="https://i.postimg.cc/bJF5mNxR/Whats-App-Image-2023-03-21-at-4-01-48-AM.jpg" width = "230">
+  <img src="https://i.postimg.cc/0QN3GJwQ/Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg" width = "230">
+  <img src="https://i.postimg.cc/d3kxpPnc/Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg" width = "230">
+  <img src="https://i.postimg.cc/J7SrnRfJ/Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg" width = "230">
 </p>
 <!-- [![Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg](https://i.postimg.cc/0QN3GJwQ/Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg)](https://postimg.cc/MchdqHt2) -->
 <!-- [![Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg](https://i.postimg.cc/d3kxpPnc/Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg)](https://postimg.cc/m14j1n0m) -->
