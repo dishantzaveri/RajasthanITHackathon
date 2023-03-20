@@ -32,5 +32,6 @@ urlpatterns = [
         ),
         name="swagger-ui",
     ),
-    path('banking/', include('banking.urls'))
+    path('banking/', include('banking.urls')),
+    path('cibil/', include('cibil.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
