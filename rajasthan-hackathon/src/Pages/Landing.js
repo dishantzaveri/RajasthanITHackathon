@@ -1,20 +1,16 @@
 import React from 'react'
-import Navbar from "../Components/Navbar";
-import Loans from "./Loans";
+import Navbar from '../Components/Navbar'
+import Loans from './Loans'
 import Fade from '@mui/material/Fade'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Switch from '@mui/material/Switch'
-import Paper from '@mui/material/Paper'   
+import Paper from '@mui/material/Paper'
 import Slide from '@mui/material/Slide'
 import Button from '@mui/material/Button'
 
 const Landing = () => {
-  React.useEffect(() => {
-    setChecked((prev) => !prev)
-     }, []) 
-  
-  const [checked, setChecked] = React.useState(false)
+  const [checked, setChecked] = React.useState(true)
 
   return (
     <>
@@ -28,7 +24,7 @@ const Landing = () => {
           </Typography>
           <Typography variant="h2" color="initial">
             All your business in one app.
-          </Typography> 
+          </Typography>
         </div>
       </Slide>
       <Slide direction="up" in={checked} mountOnEnter unmountOnExit>
