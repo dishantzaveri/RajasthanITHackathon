@@ -1,5 +1,4 @@
-# SIH-TeamEnemiesOfSyntaxx
-This is our project made for Smart India Hackathon 2022 . We bagged the First place(Rewarded with cash prize of Rs.1,00,000 + Goodies) .
+# TeamEnemiesOfSyntaxx
 
 # Introduction
 
@@ -22,6 +21,11 @@ The feature available in Mentor Dots are .
 <br /> ->Interactive Graphs and map for startup
 <br /> ->Voice Bot
 <br /> ->Government Schemes and Bootcamps
+<br /> ->Loan and Insurance
+<br /> ->Cibil Score Predictor
+<br /> ->Financial Fraud Detection
+<br /> ->Alternative Loan Repayment
+<br /> ->Marketplace for locals
 <br /> ->Object and sign detection For differently abled person 
 <br /> ->Post like comment feature
 <br /> ->Multilingual Website with 5 different languages
