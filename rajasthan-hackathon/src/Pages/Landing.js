@@ -1,11 +1,14 @@
-import logo from '../logo.svg';
+import React from 'react'
+import Navbar from "../Components/Navbar";
+import Loans from "./Loans";
 
-export default function Landing() {
+const Landing = () => {
   return (
-    <div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
-  );
+    <>
+      <Navbar/>
+      {/* <Loans /> */}
+    </>
+  )
 }
+
+export default Landing
