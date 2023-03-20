@@ -29,12 +29,12 @@ function CibilScore() {
   const [creditCards, setcreditCards] = useState('');
   const [NumberLoans, setNumberLoans] = useState('');
   const [alert, setAlert] = useState(false);
-  const [cibil, setCibil] = useState(0);
+  const [cibil, setCibil] = useState('');
 
-  
-  const scam = () => {
-    setCibil(2);
-  }
+
+  // const scam = () => {
+  //   setCibil(2);
+  // }
 
   const bhejbhai = () => {
     var myHeaders = new Headers();
@@ -109,18 +109,20 @@ function CibilScore() {
     };
 
     fetch("https://2d2b-117-250-3-86.in.ngrok.io/cibil/score/", requestOptions)
-      .then(response => response.json())
-      .then(result => console.log(result.data))
-      .then(result => setCibil(result.data))
-
-      .catch(error => console.log('error', error));
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result)
+        console.log(result.data)
+        setCibil(result.data)
+      })
+      .catch((error) => console.log('error', error))
 
 
   }
   return (
     // <ScrollView>
     <View style={styles.container}>
-      
+
       <LinearGradient colors={['#E24748', '#F57960']} style={styles.container1}>
         <Text
           style={{
@@ -198,7 +200,7 @@ function CibilScore() {
             autoCapitalize="none"></TextInput>
         </View>
         <View style={{ ...styles.button, backgroundColor: '#F57960' }}>
-          <TouchableOpacity onPress={scam} 
+          <TouchableOpacity onPress={bhejbhai}
             style={{ alignItems: 'center', justifyContent: 'center' }}>
             <Text
               style={{
@@ -210,7 +212,7 @@ function CibilScore() {
               Generate Cibil Score
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity 
+          <TouchableOpacity
             style={{ alignItems: 'center', justifyContent: 'center' }}>
             <Text
               style={{
@@ -219,7 +221,7 @@ function CibilScore() {
                 fontWeight: '500',
                 marginTop: 2,
               }}>
-             Your score is {cibil}
+              Your score is {cibil}
             </Text>
           </TouchableOpacity>
         </View>
@@ -244,9 +246,9 @@ function CibilScore() {
           }}
           /> */}
       </LinearGradient>
-     
+
     </View>
-   
+
   );
 }
 

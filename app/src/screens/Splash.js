@@ -6,7 +6,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 const Splash = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('SlidingUp')
+      navigation.navigate('SwiperScreens')
     }, 2200);
   }, []);
   return (

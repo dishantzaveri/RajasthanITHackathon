@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   View,
   StyleSheet,
@@ -15,12 +15,12 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import TouchId from 'react-native-touch-id';
-import {useDispatch} from 'react-redux';
-import {setUser} from '../redux/reducers/user';
+import LottieView from 'lottie-react-native';
+import { useDispatch } from 'react-redux';
+import { setUser } from '../redux/reducers/user';
 import * as CONSTANTS from '../CONSTANTS';
-import {CometChat} from '@cometchat-pro/react-native-chat';
-function Login({navigation}) {
+import { CometChat } from '@cometchat-pro/react-native-chat';
+function Login({ navigation }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [tok, setTok] = useState();
@@ -56,10 +56,10 @@ function Login({navigation}) {
         const uuid = result.name.split(' ')[0] + result.email.split('@')[0];
         CometChat.login(uuid, CONSTANTS.AUTH_KEY).then(
           user => {
-            console.log('Login Successful:', {user});
+            console.log('Login Successful:', { user });
           },
           error => {
-            console.log('Login failed with exception:', {error});
+            console.log('Login failed with exception:', { error });
           },
         );
       })
@@ -82,6 +82,14 @@ function Login({navigation}) {
 
         style={styles.animation}
       /> */}
+
+      <LottieView
+        source={require('../assets/mentor.json')}
+        autoPlay={true}
+        loop
+        style={styles.lottieview}
+      />
+
 
       <Textinp
         marginTop={10}
@@ -134,7 +142,7 @@ function Login({navigation}) {
           navigation.navigate('SignUp');
           // console.log("Signed Up");
         }}>
-        <Text style={{fontSize: 15, margin: 30}}>
+        <Text style={{ fontSize: 15, margin: 30 }}>
           Don't have an account? Signup
         </Text>
       </TouchableOpacity>
@@ -176,6 +184,14 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
     width: wp('85%'),
+  },
+  lottieview: {
+    height: 300,
+    width: 300,
+    margin :10,
+    alignContent: 'center',
+    alignSelf: 'center',
+
   },
 });
 

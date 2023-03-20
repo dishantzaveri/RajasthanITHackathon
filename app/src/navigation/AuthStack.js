@@ -32,7 +32,7 @@ import MainBottomTab from '../screens/MainBottomTab';
 import Alert from '../screens/Alert';
 import EducationLoan from '../screens/EducationLoan';
 import MainBottomTab2 from '../screens/MainBottomTab2';
-
+import Stock from '../screens/Stock';
 const Stack = createNativeStackNavigator();
 const OnboardingStack = createNativeStackNavigator();
 
@@ -175,6 +175,7 @@ const AuthStack = () => {
         <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
         <Stack.Screen name="Details" component={Details} options={{headerShown: false}}/>
         <Stack.Screen name="Alert" component={Alert} options={{headerShown: false}}/>
+        <Stack.Screen name="Stock" component={Stock} options={{headerShown: false}}/>
 
     </Stack.Navigator>
   );

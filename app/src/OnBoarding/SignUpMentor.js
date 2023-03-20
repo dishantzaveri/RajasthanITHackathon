@@ -22,6 +22,7 @@ import {
   Button,
 } from 'react-native-paper';
 import { height, width} from '../Consts';
+import LottieView from 'lottie-react-native';
 
 function SignUpMentor({ navigation }) {
   const [email, setEmail] = useState('');
@@ -36,14 +37,14 @@ function SignUpMentor({ navigation }) {
   ]);
   return (
     <KeyboardAvoidingView style={styles.container}>
-      <Image
-        source={signInLogo}
-        style={{
-          width: Dimensions.get('screen').width,
-          height: 300,
-        }}
-        resizeMode="center"
+     
+     <LottieView
+        source={require('../assets/finance.json')}
+        autoPlay={true}
+        loop
+        style={styles.lottieview}
       />
+
       <Textinp
         marginTop={20}
         iconShape="person"
@@ -125,6 +126,14 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
+  },
+  lottieview: {
+    height: 300,
+    width: 300,
+    margin :10,
+    alignContent: 'center',
+    alignSelf: 'center',
+
   },
   textStyle: {
     color: 'white',

@@ -16,18 +16,16 @@ import logo from '../assets/logo.jpeg';
 import {useTheme } from '@react-navigation/native';
 
 const WelcomePage = ({navigation}) => {
-  const { colors } = useTheme();
-  const githubFindMentor =
-    'https://github.com/dishantzaveri/SIH-TeamEnemiesOfSyntaxx';
-  const joinNow =
-    'https://docs.google.com/forms/d/e/1FAIpQLSc3uWpEeBUCXMoGAJ5qm31p9URBppxXT5L4RJFrTOJee9TFjQ/viewform';
-  const discorUrl = 'https://discord.gg/4fNygpXsaJ';
 
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.iconView}>
         <Image source={logo} style={styles.image} />
         {/* <Text style={styles.headerText}>Find Mentor & Mentees</Text> */}
+        <Image
+          style={{width: 350, height: 700,  resizeMode:'contain'}}
+          source={require('../assets/about.png')}
+        />
       </View>
     </SafeAreaView>
   );
@@ -103,6 +101,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 23,
   },
+  
 });
 
 export {WelcomePage};

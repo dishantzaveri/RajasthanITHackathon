@@ -42,6 +42,7 @@ import ProfileScreen from '../pages/ProfileScreen';
 import TopPicksScreen from '../pages/TopPicksScreen';
 import ChatMain from '../pages/Chat/ChatMain';
 import { StartupDetails } from '../pages/StartupDetails';
+import Stock from '../screens/Stock';
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
 const HomeStack = createNativeStackNavigator();
@@ -385,6 +386,16 @@ const AppStack = () => {
             headerShown: false,
             drawerIcon: ({color}) => (
               <Ionicons name="document" size={22} color={color} />
+            ),
+          }}
+        />
+         <Drawer.Screen
+          name="Stock"
+          component={Stock}
+          options={{
+            headerShown: false,
+            drawerIcon: ({color}) => (
+              <Ionicons name="flash" size={22} color={color} />
             ),
           }}
         />
