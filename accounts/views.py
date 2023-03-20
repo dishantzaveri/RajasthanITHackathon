@@ -195,6 +195,8 @@ class EntrepreneursList(GenericAPIView):
 	def get(self,request):
 		entrepreneurs = EntrepreneurProfile.objects.all()
 		serializer = EntrepreneurProfileSerializer(entrepreneurs, many=True)
+		print("1")
+		print(serializer.data)
 		return Response(serializer.data)
 
 class GstVerification(APIView):
@@ -415,6 +417,17 @@ class ProfileSearch(GenericAPIView):
 		print(expertise_list)
 		serializer = MentorProfileSerializer(expertise_list, many=True)
 		return Response(serializer.data)
+	
+# class EntProfileSearch(GenericAPIView):
+# 	queryset = EntrepreneurProfile.objects.all()
+# 	serializer_class = EntrepreneurProfileSerializer
+
+# 	def post(self,request):
+# 		expertise = request.POST.get('expertise')
+# 		expertise_list = MentorProfile.objects.filter(expertise=expertise)
+# 		print(expertise_list)
+# 		serializer = MentorProfileSerializer(expertise_list, many=True)
+# 		return Response(serializer.data)
 
 class Rating(GenericAPIView):
 	queryset = Myrating.objects.all()
