@@ -8,6 +8,8 @@ import Switch from '@mui/material/Switch'
 import Paper from '@mui/material/Paper'
 import Slide from '@mui/material/Slide'
 import Button from '@mui/material/Button'
+import { Link } from 'react-router-dom'
+
 
 const Landing = () => {
   const [checked, setChecked] = React.useState(true)
@@ -43,6 +45,7 @@ const Landing = () => {
       </Slide>
 
       <Slide direction="up" in={checked} mountOnEnter unmountOnExit>
+        <Link to="/loans" style={{textDecoration: 'none'}}>
         <Button
           variant="text"
           color="primary"
@@ -64,6 +67,7 @@ const Landing = () => {
             <b>→</b>{' '}
           </span>
         </Button>
+        </Link>
       </Slide>
 
       {/* <Loans /> */}

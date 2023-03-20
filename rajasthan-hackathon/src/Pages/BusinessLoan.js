@@ -5,6 +5,7 @@
   import patentLogo from '../Images/patent.png'
   import staticImg from '../Images/static.png'
 import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
 import LoanTable from '../Components/LoanTable'
 
 
@@ -57,7 +58,10 @@ import LoanTable from '../Components/LoanTable'
               marginLeft: 28,
             }}
           >
-            <b>Already have a startup and are looking for loans?</b>
+            <b>
+              Already have a startup and are looking for{' '}
+              <span style={{ color: '#E24748' }}>loans</span>?
+            </b>
           </Typography>
           <Typography
             variant="h6"
@@ -73,7 +77,71 @@ import LoanTable from '../Components/LoanTable'
             Browse through some schemes below:
           </Typography>
         </div>
-        <div style={{ textAlign: 'left', marginInline: '15%', marginTop: '20px', marginBottom: '20px'}}><LoanTable /></div>
+        <div
+          style={{
+            textAlign: 'left',
+            marginInline: '15%',
+            marginTop: '20px',
+            marginBottom: '20px',
+          }}
+        >
+          <LoanTable />
+        </div>
+
+        <div sx={{ alignItems: 'left' }}>
+          <Typography
+            variant="h4"
+            color="initial"
+            sx={{
+              paddingTop: '50px',
+              color: '#2F3A56',
+              textAlign: 'left',
+              marginLeft: 28,
+            }}
+          >
+            <b>
+              Already have a startup and are looking for{' '}
+              <span style={{ color: '#E24748' }}>mentors</span>?
+            </b>
+          </Typography>
+          <Typography
+            variant="h6"
+            color="initial"
+            sx={{
+              color: '#5D657B',
+              textAlign: 'left',
+              marginLeft: 28,
+            }}
+          >
+            We have a special platform for people just like you to find and
+            connect with mentors and get funding and interact <br />
+            with investors!
+          </Typography>
+          <Button
+            variant="text"
+            color="primary"
+            href="http://127.0.0.1:3001/login"
+              target="_blank"
+            sx={{
+              backgroundColor: '#E24748',
+              // marginTop: '30px',
+              color: 'white',
+              ':hover': {
+                bgcolor: '#2F3A56',
+                transition: '0.7s',
+                // color: 'black',
+              },
+              padding: '15px',
+              margin: '10px',
+              marginBottom: '60px'
+              // marginLeft: '460px',
+              
+            }}
+          >
+            Try Now
+            
+          </Button>
+        </div>
       </>
     )
   }

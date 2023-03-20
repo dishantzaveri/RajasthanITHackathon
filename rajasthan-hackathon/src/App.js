@@ -9,6 +9,7 @@ import EducationalLoans from "./Pages/EducationalLoan";
 import PersonalLoans from "./Pages/PersonalLoan";
 import Loans from "./Pages/Loans";
 import Cibil from "./Pages/Cibil";
+import Government from "./Pages/Government";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/personalLoans" element={<PersonalLoans />} />
           <Route path="/educationalLoans" element={<EducationalLoans />} />
           <Route path="/credit" element={<Cibil />} />
+          <Route path="/government" element={<Government />} />
 
         </Routes>
       </Router>

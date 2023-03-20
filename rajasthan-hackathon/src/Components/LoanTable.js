@@ -12,6 +12,7 @@ import Modal from '@mui/material/Modal'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import MudraForm from './MudraForm'
+import CheckStatus from './CheckStatus'
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -88,9 +89,9 @@ export default function CustomizedTables() {
                   width: '450px',
                 }}
               >
-                Sub Schemes</StyledTableCell>
-              {/* <StyledTableCell align="center">{row.subSchemes}</StyledTableCell> */}
-              <StyledTableCell align="center">
+                Sub Schemes
+              </StyledTableCell>
+              {/* <StyledTableCell align="center">
                 <Button
                   variant="text"
                   color="primary"
@@ -112,7 +113,7 @@ export default function CustomizedTables() {
                 >
                   Apply
                 </Button>
-              </StyledTableCell>
+              </StyledTableCell> */}
               <StyledTableCell
                 align="center"
                 style={{
@@ -171,20 +172,17 @@ export default function CustomizedTables() {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        
+
         // sx={{maxWdith: '50%'}}
         // maxWidth="600px"
       >
         <Box sx={style}>
-          {/* <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography> */}
           <MudraForm />
         </Box>
       </Modal>
+      {/* <div style={{margin:'auto', width: '100%'}}> */}
+      <CheckStatus />
+      {/* </div> */}
     </>
   )
 }

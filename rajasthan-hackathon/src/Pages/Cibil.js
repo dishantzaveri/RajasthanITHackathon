@@ -5,15 +5,22 @@ import Grid from "@mui/material/Grid";
 import { Button, TextField } from "@mui/material";
 import { useEffect } from "react";
 import {
-  BarChart,
-  Bar,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
-  Tooltip,
+  Label,
   ResponsiveContainer,
   PieChart,
   Pie,
-} from "recharts";
+  RadialBarChart,
+  RadialBar,
+  Legend, Tooltip
+} from 'recharts'
+import Loading from '../Components/Loading';
+
+
+
 
 export default function Cibil() {
   // const monthWiseFunding = {
@@ -147,6 +154,8 @@ export default function Cibil() {
     ],
   });
 
+  // const data = 
+
   const fields = [
     { field: "Age", name: "Age" },
     { field: "Annual Income", name: "Annual_Income" },
@@ -208,14 +217,14 @@ export default function Cibil() {
   return (
     <>
       <Navbar />
-      <div sx={{ alignItems: "left" }}>
+      <div sx={{ alignItems: 'left' }}>
         <Typography
           variant="h4"
           color="initial"
           sx={{
-            paddingTop: "50px",
-            color: "#2F3A56",
-            textAlign: "left",
+            paddingTop: '50px',
+            color: '#2F3A56',
+            textAlign: 'left',
             marginInline: 28,
           }}
         >
@@ -225,8 +234,8 @@ export default function Cibil() {
           variant="h6"
           color="initial"
           sx={{
-            color: "#5D657B",
-            textAlign: "left",
+            color: '#5D657B',
+            textAlign: 'left',
             marginInline: 28,
           }}
         >
@@ -250,44 +259,69 @@ export default function Cibil() {
       </Grid>
       <Button
         onClick={handleSubmit}
-        sx={{ backgroundColor: "#E24748" }}
+        sx={{
+          backgroundColor: '#E24748',
+          ':hover': {
+            bgcolor: '#2F3A56',
+            transition: '0.7s',
+            color: 'white',
+            border: '0px solid #2F3A56',
+          },
+        }}
         variant="contained"
       >
         Calculate Score
       </Button>
       {cibil ? (
-        <Typography variant="body1" color="initial">
-          Your cibil score is {cibil}
-        </Typography>
-      ) : <></>}
-      {/* <div className="h-full w-full flex flex-col justify-center">
-        <h1 className="text-xl font-semibold mb-2">Monthwise Funding</h1>
-        {monthlyFunding && (
-          <div className="h-[350px] w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart width={500} height={350} data={monthlyFunding}>
-                <Pie
-                  dataKey="x"
-                  data={monthlyFunding}
-                  outerRadius={120}
-                  fill="#7B1FA2"
-                  label
-                />
-                <Tooltip />
-              </PieChart>
-            </ResponsiveContainer>
-          </div>
-        )}
-        {!monthlyFunding && (
-          <div className="h-[350px] animate-pulse">
-            <div className="h-full w-full bg-slate-500 rounded-xl">
-              <div className="w-full h-full flex flex-col justify-center items-center">
-                <h1 className="text-xl mt-2">Loading...</h1>
-              </div>
-            </div>
-          </div>
-        )}
-      </div> */}
+        <>
+          <Typography variant="h4" color="initial" sx={{paddingTop: 3}}>
+            Your cibil score is {cibil}
+          </Typography>
+          <RadialBarChart
+            width={1530}
+            height={350}
+            innerRadius="10%"
+            outerRadius="80%"
+            data={[
+              {
+                name: '18-24',
+                uv:  900 ,
+                pv: 900,
+                fill: '#2F3A56',
+              },
+              {
+                name: '25-29',
+                uv: cibil,
+                pv: 900,
+                fill: '#E24748',
+              },
+            ]}
+            // margin={ top: 0, right: 0, bottom: 0, left: 0 }
+            startAngle={180}
+            endAngle={0}
+          >
+            <RadialBar
+              minAngle={15}
+              // label={{ fill: '#666', position: 'insideStart' }}
+              background
+              clockWise={true}
+              dataKey="uv"
+             
+            />
+            {/* <Legend
+              iconSize={10}
+              width={120}
+              height={140}
+              layout="vertical"
+              verticalAlign="middle"
+              align="right"
+            /> */}
+            <Tooltip />
+          </RadialBarChart>
+        </>
+      ) : (
+        <Loading />
+      )}
     </>
-  );
+  )
 }
