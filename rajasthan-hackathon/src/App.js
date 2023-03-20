@@ -8,9 +8,10 @@ import BusinessLoans from "./Pages/BusinessLoan";
 import EducationalLoans from "./Pages/EducationalLoan";
 import PersonalLoans from "./Pages/PersonalLoan";
 import Loans from "./Pages/Loans";
+import Cibil from "./Pages/Cibil";
 
 function App() {
-  return ( 
+  return (
     <div className="App">
       <Router>
         <Routes>
@@ -22,10 +23,12 @@ function App() {
           <Route path="/businessLoans" element={<BusinessLoans />} />
           <Route path="/personalLoans" element={<PersonalLoans />} />
           <Route path="/educationalLoans" element={<EducationalLoans />} />
+          <Route path="/credit" element={<Cibil />} />
+
         </Routes>
       </Router>
     </div>
   );
 }
 
-export default App;    
+export default App;

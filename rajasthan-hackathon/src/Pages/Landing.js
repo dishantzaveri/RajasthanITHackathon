@@ -7,13 +7,12 @@ import Box from '@mui/material/Box'
 import Switch from '@mui/material/Switch'
 import Paper from '@mui/material/Paper'   
 import Slide from '@mui/material/Slide'
-import FormControlLabel from '@mui/material/FormControlLabel'
 import Button from '@mui/material/Button'
 
 const Landing = () => {
   React.useEffect(() => {
     setChecked((prev) => !prev)
-     }, [])
+     }, []) 
   
   const [checked, setChecked] = React.useState(false)
 
