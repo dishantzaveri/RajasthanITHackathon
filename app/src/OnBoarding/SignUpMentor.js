@@ -32,7 +32,7 @@ function SignUpMentor({ navigation }) {
   const [items, setItems] = useState([
     { label: 'Entrepreneur', value: 'entrepreneur' },
     { label: 'Mentor', value: 'mentor' },
-    { label: 'Socially Disabled', value: 'disabled' },
+    // { label: 'Socially Disabled', value: 'disabled' },
   ]);
   return (
     <KeyboardAvoidingView style={styles.container}>
@@ -108,13 +108,13 @@ function SignUpMentor({ navigation }) {
         }}>
            <Text style={styles.textStyle}>Sign Up</Text>
       </TouchableOpacity>
-        <View >
+        {/* <View >
 
           <Button style={styles.button2} labelStyle={styles.label2} onPress={() =>
             navigation.navigate('LocationTracer')
           }>Location
           </Button>
-        </View>
+        </View> */}
        
     </KeyboardAvoidingView>
   );
