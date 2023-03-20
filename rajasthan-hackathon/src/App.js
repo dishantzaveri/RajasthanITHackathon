@@ -1,17 +1,27 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Loading from "./Components/Loading";
+import Signup from "./Pages/Signup";
 import Landing from "./Pages/Landing";
+import Insurance from "./Pages/Insurance";
+import BusinessLoans from "./Pages/BusinessLoan";
+import Loans from "./Pages/Loans";
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/landing" element={<Landing />} />
+          <Route path="/loading" element={<Loading />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/insurance" element={<Insurance />} />
+          <Route path="/loans" element={<Loans />} />
+          <Route path="/Loan" element={<BusinessLoans />} />
         </Routes>
       </Router>
     </div>
   );
 }
 
-export default App;
+export default App;    
