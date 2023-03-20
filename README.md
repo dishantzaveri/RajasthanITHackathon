@@ -5,6 +5,12 @@ Organized by the Department of IT&amp;C, Rajasthan Hackathon 7.0 will be the sev
 
 Hola Everyone, This is team The Enemies of Syntax which consists of 5 people of each and every stack. We have Dishant and Priyambi here for React Native, Lokita and Shrey for Frontend and Shrey and Sarthak for AI/ML and Backend .
 
+# Problem Statement
+
+Financial Inclusion and Economic Empowerment :-
+Developing solutions that promote financial inclusion and economic empowerment, such as improving access to financial services, promoting entrepreneurship, and reducing economic disparities.
+
+
 # Contributors :
 <br />Dishant Zaveri (ReactNative) : https://github.com/dishantzaveri
 <br />Priyambi Hiran (ReactNative + React) : https://github.com/priyambi
