@@ -1,5 +1,5 @@
 # RajasthanITHackathon
-  >> Backend Branch
+  > Backend Branch
 
 ## Steps to run the backend
 
