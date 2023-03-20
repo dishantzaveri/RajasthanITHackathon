@@ -45,7 +45,7 @@ import LoanTable from '../Components/LoanTable'
     return (
       <>
         <Navbar />
-        <img src={staticImg} alt="static" />
+        <img src={staticImg} alt="startAStartup" />
         <div sx={{ alignItems: 'left' }}>
           <Typography
             variant="h4"
