@@ -86,7 +86,7 @@ class Startup(models.Model):
     def __str__(self):
         return self.tradeName
 
-class WorkExperience(models.Model):
+class WorkExperience(models.Model): 
     user = models.ForeignKey(User, related_name = 'experience', on_delete=models.CASCADE)
     job_title = models.CharField(max_length=255)
     company_name = models.CharField(max_length=255)
