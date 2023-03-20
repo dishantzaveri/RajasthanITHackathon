@@ -1,5 +1,5 @@
 # RajasthanITHackathon
-  >> Frontend Branch
+  > Frontend Branch
 
 ## Steps to run Frontend branch
 ```
