@@ -181,9 +181,9 @@ const MentorMenteesDetail = ({route, props}) => {
               </View>
               <View style={{flexDirection: 'row', marginVertical: 2}}>
                 <Text style={{color: 'black', fontWeight: '600'}}>Year : </Text>
-                <Text style={{color: 'black'}}>
+                {/* <Text style={{color: 'black'}}>
                   {edu.start_date.split('-')[0]} - {edu.end_date.split('-')[0]}
-                </Text>
+                </Text> */}
               </View>
               <View style={{flexDirection: 'row', marginVertical: 2}}>
                 <Text style={{color: 'black', fontWeight: '600'}}>

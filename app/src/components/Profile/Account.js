@@ -28,7 +28,6 @@ export default function Account() {
       requestOptions,
     )
       .then(response => response.text())
-      .then
       .then(result => {
         console.log(result);
         console.log(JSON.parse(result)[0].startup);
@@ -166,10 +165,10 @@ export default function Account() {
                       <Text style={{color: 'black', fontWeight: '600'}}>
                         Period :{' '}
                       </Text>
-                      <Text style={{color: 'black'}}>
+                      {/* <Text style={{color: 'black'}}>
                         {' '}
                         {exp.start_date} - {exp.end_date}
-                      </Text>
+                      </Text> */}
                     </View>
                     <View style={{flexDirection: 'row', marginVertical: 2}}>
                       <Text style={{color: 'black', fontWeight: '600'}}>
@@ -206,10 +205,10 @@ export default function Account() {
                     <Text style={{color: 'black', fontWeight: '600'}}>
                       Year :{' '}
                     </Text>
-                    <Text style={{color: 'black'}}>
+                    {/* <Text style={{color: 'black'}}>
                       {edu.start_date.split('-')[0]} -{' '}
                       {edu.end_date.split('-')[0]}
-                    </Text>
+                    </Text> */}
                   </View>
                   <View style={{flexDirection: 'row', marginVertical: 2}}>
                     <Text style={{color: 'black', fontWeight: '600'}}>

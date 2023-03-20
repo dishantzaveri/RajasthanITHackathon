@@ -10,6 +10,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import SlidingUp from '../screens/SlidingUp';
 
 const SwiperScreens = ({navigation}) => {
   const {colors} = useTheme();
@@ -156,44 +157,7 @@ const SwiperScreens = ({navigation}) => {
 
   const GetStarted = () => {
     return (
-      <View style={styles.container}>
-        <LottieView
-          source={require('../assets/animation.json')}
-          autoPlay={true}
-          loop={false}
-          style={styles.animation}
-        />
-        <View
-          style={{
-            margin: 40,
-          }}>
-          <Text
-            style={{
-              fontSize: 20,
-              fontWeight: 'bold',
-            }}>
-            Get Started with any one role!
-          </Text>
-        </View>
-        <View style={{flexDirection: 'row', alignSelf: 'center'}}>
-          <TouchableOpacity
-            style={styles.signupButton}
-            onPress={() => {
-              navigation.navigate('SignUp');
-              console.log('Logged In');
-            }}>
-            <Text style={styles.signupTextStyle}>Sign Up</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => {
-              navigation.navigate('Login');
-              console.log('Logged In');
-            }}>
-            <Text style={styles.textStyle}>Login</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+      <SlidingUp/>
     );
   };
 

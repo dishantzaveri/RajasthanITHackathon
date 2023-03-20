@@ -15,6 +15,20 @@ import Profile1 from '../components/Profile/Profile1';
 import Profile2 from '../components/Profile/Profile2';
 import AddStartups from '../components/Profile/AddStartups';
 import LocationTracer from '../pages/LocationTracer';
+import SlidingUp from '../screens/SlidingUp';
+import LoginPage from '../screens/LoginPage';
+import SignUpPage from '../screens/SignUpPage';
+import Splash from '../screens/Splash';
+import Loan from '../screens/Loan';
+import Insurance from '../screens/Insurance';
+import CibilScore from '../screens/CibilScore';
+import Activity from '../screens/Activity';
+import PersonalLoan from '../screens/PersonalLoan';
+import PensionLoan from '../screens/PensionLoan';
+import EligibilityCheck from '../screens/EligibilityCheck';
+import Home from '../screens/Home';
+import Details from '../screens/Details';
+import MainBottomTab from '../screens/MainBottomTab';
 
 const Stack = createNativeStackNavigator();
 const OnboardingStack = createNativeStackNavigator();
@@ -68,8 +82,12 @@ const Onboarding = () => {
 
 const AuthStack = () => {
   return (
-    <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="Splash">
       <Stack.Screen name="SwiperScreens" component={SwiperScreens} />
+      <Stack.Screen
+          name="SlidingUp"
+          component={SlidingUp}
+          options={{headerShown: false}}></Stack.Screen>
       <Stack.Screen
         name="Login"
         component={Login}
@@ -94,6 +112,61 @@ const AuthStack = () => {
         name="LocationTracer"
         component={LocationTracer}
         options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen
+          name="Loginpage"
+          component={LoginPage}
+          options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen
+          name="SignUpPage"
+          component={SignUpPage}
+          options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen
+          name="Splash"
+          component={Splash}
+          options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen
+          name="MainBottomTab"
+          component={MainBottomTab}
+          options={{headerShown: false}}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="Loan"
+          component={Loan}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Insurance"
+          component={Insurance}
+          options={{headerShown: false}}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="CibilScore"
+          component={CibilScore}
+          options={{headerShown: false}}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="Activity"
+          component={Activity}
+          options={{headerShown: false}}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="PersonalLoan"
+          component={PersonalLoan}
+          options={{headerShown: false}}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="PensionLoan"
+          component={PensionLoan}
+          options={{headerShown: false}}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="EligibilityCheck"
+          component={EligibilityCheck}
+          options={{headerShown: false}}
+        ></Stack.Screen>
+        <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
+        <Stack.Screen name="Details" component={Details} options={{headerShown: false}}/>
+
     </Stack.Navigator>
   );
 };

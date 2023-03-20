@@ -143,7 +143,11 @@ function Tabs() {
           if (route.name === 'Mentors') {
             return <FontAwesome5 name="people-carry" size={27} color={color} />;
           }
-         
+          if (route.name === 'Maps') {
+            return (
+              <FontAwesome5 name="map" size={27} color={color} />
+            );
+          }
           if (route.name === 'Posts') {
             return (
               <MaterialIcons name="dynamic-feed" size={27} color={color} />
@@ -195,11 +199,11 @@ function Tabs() {
         }}
       />
 
-      {/* <Tab.Screen
-        name="Entrepreneur"
-        component={MenteeScreen}
+      <Tab.Screen
+        name="Maps"
+        component={Location}
         options={{headerShown: false}}
-      /> */}
+      />
     </Tab.Navigator>
   );
 }
@@ -355,7 +359,7 @@ const AppStack = () => {
             ),
           }}
         /> */}
-        <Drawer.Screen
+        {/* <Drawer.Screen
           name="Maps"
           component={Location}
           options={{
@@ -363,7 +367,7 @@ const AppStack = () => {
               <Ionicons name="location" size={22} color={color} />
             ),
           }}
-        />
+        /> */}
         <Drawer.Screen
           name="Careertv"
           component={Careertv}
