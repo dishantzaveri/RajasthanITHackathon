@@ -88,7 +88,30 @@ export default function CustomizedTables() {
                   width: '450px',
                 }}
               >
-                Sub Schemes
+                Sub Schemes</StyledTableCell>
+              {/* <StyledTableCell align="center">{row.subSchemes}</StyledTableCell> */}
+              <StyledTableCell align="center">
+                <Button
+                  variant="text"
+                  color="primary"
+                  href="http://127.0.0.1:3001/login"
+                  target="_blank"
+                  sx={{
+                    // backgroundColor: '#E24748',
+                    // border: '1px solid #E24748',
+                    color: '#2F3A56',
+                    ':hover': {
+                      bgcolor: '#2F3A56',
+                      transition: '0.7s',
+                      color: 'white',
+                      border: '0px solid #2F3A56',
+
+                      // color: 'black',
+                    },
+                  }}
+                >
+                  Apply
+                </Button>
               </StyledTableCell>
               <StyledTableCell
                 align="center"
