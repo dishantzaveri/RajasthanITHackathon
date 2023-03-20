@@ -50,7 +50,9 @@ export default function Cibil() {
           </Grid>
         ))}
       </Grid>
-      <Button variant="contained" >Calculate Score</Button>
+      <Button variant="contained" sx={{ backgroundColor: "#E24748" }}>
+        Calculate Score
+      </Button>
     </>
   );
 }
