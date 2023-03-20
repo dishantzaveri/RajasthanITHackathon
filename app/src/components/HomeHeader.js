@@ -77,16 +77,17 @@ const HomeHeader = ({ onSearch }) => {
             alignItems: "center",
             paddingHorizontal: SIZES.font,
             paddingVertical: SIZES.small - 2,
+            height:40
           }}
         >
           <Image
             source={assets.search}
             resizeMode="contain"
-            style={{ width: 20, height: 20, marginRight: SIZES.base }}
+            style={{ width: 15, height: 15, marginRight: SIZES.base }}
           />
           <TextInput
             placeholder="Search Products"
-            style={{ flex: 1 }}
+            style={{ flex: 1,height:150 }}
             onChangeText={onSearch}
           />
         </View>

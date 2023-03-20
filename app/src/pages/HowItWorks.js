@@ -192,13 +192,13 @@ const HowItWorks = (props) => {
               </View>
               <Text style={{marginTop: 10}}>Just tweet about these!</Text>
             </View>
-            <View>
+            {/* <View>
               <Text style={styles.subjectHeader}>Join Us</Text>
               <Link
                 text="Click here"
                 url="https://docs.google.com/forms/d/e/1FAIpQLSc3uWpEeBUCXMoGAJ5qm31p9URBppxXT5L4RJFrTOJee9TFjQ/viewform"
               />
-            </View>
+            </View> */}
           </View>
           <View style={styles.box}>
             <Text style={styles.boxHeader}>

@@ -29,59 +29,6 @@ const WelcomePage = ({navigation}) => {
         <Image source={logo} style={styles.image} />
         {/* <Text style={styles.headerText}>Find Mentor & Mentees</Text> */}
       </View>
-
-      <TouchableOpacity
-        onPress={() => Linking.openURL(githubFindMentor)}
-        style={{
-          marginVertical: 20,
-          flexDirection: 'row',
-          alignItems: 'center',
-        }}>
-        {/* <Github width={24} height={24} />
-        <Text style={styles.text1Style}> Feel free to contribute! </Text> */}
-      </TouchableOpacity>
-      <View style={{marginHorizontal: 19}}>
-      </View>
-      <View style={styles.discordView}>
-        <WebView
-          style={styles.webView}
-          source={{
-            uri: discorUrl,
-          }}
-        />
-      </View>
-      <View style={styles.discordTextView}>
-        <Text>Join this channel to communicate with each other.</Text>
-      </View>
-      <View style={{marginVertical: 5}}>
-        {/* <TouchableOpacity
-            onPress={() => Linking.openURL(joinNow)}
-            style={styles.joinButton}>
-            <JoinNowAddUser width={25} height={25} fill={'white'} />
-            <Text style={styles.buttonText}>Join Now</Text>
-          </TouchableOpacity> */}
-        <TouchableOpacity onPress={() => Linking.openURL(joinNow)}>
-          {/* <JoinNowAddUser width={40} height={40} fill={'white'} /> */}
-          <LinearGradient
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}
-            style={styles.linearGradient}
-            colors={['#4186F5', '#00FFA3']}>
-            <Text style={styles.label}>Join Now</Text>
-          </LinearGradient>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('TopPicksScreen')}>
-          {/* <JoinNowAddUser width={40} height={40} fill={'white'} /> */}
-          <LinearGradient
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}
-            style={styles.linearGradient}
-            colors={['#4186F5', '#00FFA3']}>
-            <Text style={styles.label}>Top Picks</Text>
-          </LinearGradient>
-        </TouchableOpacity>
-      </View>
-
     </SafeAreaView>
   );
 };

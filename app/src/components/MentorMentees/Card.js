@@ -74,7 +74,7 @@ const Card = ({navigation, data, listType = 'mentor'}) => {
           rounded
           source={{
             uri: data?.profile_pic
-              ? `https://2d2b-117-250-3-86.in.ngrok.io/${data.profile_pic}`
+              ? `https://2d2b-117-250-3-86.in.ngrok.io${data.profile_pic}`
               : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png',
           }}
           size="large"

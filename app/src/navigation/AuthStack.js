@@ -31,6 +31,7 @@ import Details from '../screens/Details';
 import MainBottomTab from '../screens/MainBottomTab';
 import Alert from '../screens/Alert';
 import EducationLoan from '../screens/EducationLoan';
+import MainBottomTab2 from '../screens/MainBottomTab2';
 
 const Stack = createNativeStackNavigator();
 const OnboardingStack = createNativeStackNavigator();
@@ -84,7 +85,7 @@ const Onboarding = () => {
 
 const AuthStack = () => {
   return (
-    <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="Splash">
+    <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="Splash" independent={true}>
       <Stack.Screen name="SwiperScreens" component={SwiperScreens} />
       <Stack.Screen
           name="SlidingUp"
@@ -115,7 +116,7 @@ const AuthStack = () => {
         component={LocationTracer}
         options={{headerShown: false}}></Stack.Screen>
         <Stack.Screen
-          name="Loginpage"
+          name="LoginPage"
           component={LoginPage}
           options={{headerShown: false}}></Stack.Screen>
         <Stack.Screen
@@ -127,8 +128,8 @@ const AuthStack = () => {
           component={Splash}
           options={{headerShown: false}}></Stack.Screen>
         <Stack.Screen
-          name="MainBottomTab"
-          component={MainBottomTab}
+          name="MainBottomTab2"
+          component={MainBottomTab2}
           options={{headerShown: false}}
         ></Stack.Screen>
         <Stack.Screen

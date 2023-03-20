@@ -48,7 +48,7 @@ function LoginPage() {
         // }} */}
       <View style={styles.button}>
         <Button
-          onPress={() => {navigation.navigate('MainBottomTab')}}
+          onPress={() => {navigation.navigate('MainBottomTab2')}}
           title="Login"
           color="#2F3A56"
           accessibilityLabel="Learn more about this purple button"
@@ -65,7 +65,7 @@ function LoginPage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    //backgroundColor: 'white',
     alignItems: 'center',
     width: '100%',
   },

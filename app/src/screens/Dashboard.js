@@ -80,8 +80,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
   },
   container2: {
-    width: 370,
-    height: 150,
+    width: 400,
+    height: 200,
     backgroundColor: '#E24748',
     marginLeft: 29,
     marginTop: 37,

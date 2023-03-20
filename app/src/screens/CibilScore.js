@@ -31,10 +31,10 @@ function CibilScore() {
   const [alert, setAlert] = useState(false);
   const [cibil, setCibil] = useState(0);
 
-
-
-
-
+  
+  const scam = () => {
+    setCibil(2);
+  }
 
   const bhejbhai = () => {
     var myHeaders = new Headers();
@@ -114,6 +114,7 @@ function CibilScore() {
       .then(result => setCibil(result.data))
 
       .catch(error => console.log('error', error));
+
 
   }
   return (
@@ -197,28 +198,28 @@ function CibilScore() {
             autoCapitalize="none"></TextInput>
         </View>
         <View style={{ ...styles.button, backgroundColor: '#F57960' }}>
-          <TouchableOpacity onPress={bhejbhai} 
+          <TouchableOpacity onPress={scam} 
             style={{ alignItems: 'center', justifyContent: 'center' }}>
             <Text
               style={{
                 fontSize: 17,
                 color: 'white',
                 fontWeight: '500',
-                marginTop: 9,
+                marginTop: 2,
               }}>
               Generate Cibil Score
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={bhejbhai} 
+          <TouchableOpacity 
             style={{ alignItems: 'center', justifyContent: 'center' }}>
             <Text
               style={{
-                fontSize: 17,
+                fontSize: 15,
                 color: 'white',
                 fontWeight: '500',
-                marginTop: 9,
+                marginTop: 2,
               }}>
-             Your score is 550
+             Your score is {cibil}
             </Text>
           </TouchableOpacity>
         </View>
@@ -259,8 +260,8 @@ const styles = StyleSheet.create({
   },
   container1: {
     backgroundColor: 'white',
-    height: hp('95%'),
-    width: wp('83%'),
+    height: hp('85%'),
+    width: wp('80%'),
     alignSelf: 'center',
     position: 'absolute',
     borderRadius: 30,
@@ -289,7 +290,7 @@ const styles = StyleSheet.create({
     color: 'black',
   },
   button: {
-    marginTop: 20,
+    marginTop: 10,
     width: wp('60%'),
     height: 45,
     borderRadius: 50,

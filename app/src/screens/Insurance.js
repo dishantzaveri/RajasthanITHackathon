@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Source Sans Pro',
   },
   container2: {
-    width: 110,
+    width: 95,
     height: 120,
     backgroundColor: '#FFFFFF',
     marginLeft: 25,

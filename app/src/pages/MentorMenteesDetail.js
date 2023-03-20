@@ -53,10 +53,10 @@ const MentorMenteesDetail = ({route, props}) => {
           <Image
             source={{
 
-              uri:'https://media.licdn.com/dms/image/D4D03AQG0ZaR1QnxdZQ/profile-displayphoto-shrink_400_400/0/1670765121248?e=1680739200&v=beta&t=mTvsL81aFhAgeHp3rtRZpxfVaxG7VTedQhg_Iwisvqw'
-              // uri: data?.profile_pic
-              //   ? `https://2d2b-117-250-3-86.in.ngrok.io/${data.profile_pic}`
-              //   : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png',
+              // uri:'https://media.licdn.com/dms/image/D4D03AQG0ZaR1QnxdZQ/profile-displayphoto-shrink_400_400/0/1670765121248?e=1680739200&v=beta&t=mTvsL81aFhAgeHp3rtRZpxfVaxG7VTedQhg_Iwisvqw'
+              uri: data?.profile_pic
+                ? `https://2d2b-117-250-3-86.in.ngrok.io${data.profile_pic}`
+                : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png',
             }}
             style={{
               height: 100,
