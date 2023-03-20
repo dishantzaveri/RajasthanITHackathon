@@ -121,7 +121,7 @@ export default function AllPosts({navigation}) {
                 borderRadius: 100,
               }}
               source={{
-                uri: 'https://imgnew.outlookindia.com/public/uploads/articles/2021/10/30/Mrunal_Thakur_21.jpg',
+                uri: 'https://media.licdn.com/dms/image/D4D03AQG0ZaR1QnxdZQ/profile-displayphoto-shrink_400_400/0/1670765121248?e=1680739200&v=beta&t=mTvsL81aFhAgeHp3rtRZpxfVaxG7VTedQhg_Iwisvqw',
               }}
             />
             <View style={{marginLeft: 10}}>

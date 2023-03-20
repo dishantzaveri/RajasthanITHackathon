@@ -31,7 +31,7 @@ const MentorMenteesDetail = ({route, props}) => {
       }}>
       <ScrollView>
         <LinearGradient
-          colors={['blue', '#ADD8E6']}
+          colors={['#E24748','white']}
           style={{
             width: '100%',
             height: 200,
@@ -52,9 +52,11 @@ const MentorMenteesDetail = ({route, props}) => {
           }}>
           <Image
             source={{
-              uri: data?.profile_pic
-                ? `https://2d2b-117-250-3-86.in.ngrok.io/${data.profile_pic}`
-                : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png',
+
+              uri:'https://media.licdn.com/dms/image/D4D03AQG0ZaR1QnxdZQ/profile-displayphoto-shrink_400_400/0/1670765121248?e=1680739200&v=beta&t=mTvsL81aFhAgeHp3rtRZpxfVaxG7VTedQhg_Iwisvqw'
+              // uri: data?.profile_pic
+              //   ? `https://2d2b-117-250-3-86.in.ngrok.io/${data.profile_pic}`
+              //   : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png',
             }}
             style={{
               height: 100,
@@ -84,8 +86,8 @@ const MentorMenteesDetail = ({route, props}) => {
             style={{
               marginTop: 10,
               padding: 10,
-              backgroundColor: 'white',
-              borderColor: 'blue',
+              backgroundColor: '#E24748',
+              borderColor: '#E24748',
               borderWidth: 1,
               borderRadius: 20,
             }}
@@ -94,7 +96,7 @@ const MentorMenteesDetail = ({route, props}) => {
             }}>
             <Text
               style={{
-                color: 'blue',
+                color: 'white',
               }}>
               Connect
             </Text>

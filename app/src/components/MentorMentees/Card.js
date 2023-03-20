@@ -20,8 +20,8 @@ const Card = ({navigation, data, listType = 'mentor'}) => {
     console.log(data?.profile_pic);
   }, []);
   const getBorderTopColor = () => {
-    const mentorColor = '#17aa90';
-    const menteeColor = '#2f6998';
+    const mentorColor = '#E24748';
+    const menteeColor = '#E24748';
     const bothColor = '#ffc400';
 
     if (listType === 'mentor') {

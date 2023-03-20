@@ -8,8 +8,8 @@ import location from './LocationTracer'
 
 const Location = () => {
     const [curLoc, setCurLoc] = useState({
-        latitude: 30.7993,
-        longitude: 76.9149,
+        latitude: 26.8885,
+        longitude: 75.8140,
         latitudeDelta: 0.0922,
         longitudeDelta: 0.0421,
     })

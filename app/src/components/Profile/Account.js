@@ -42,7 +42,7 @@ export default function Account() {
     <View style={{flex: 1, backgroundColor: 'white'}}>
       <ScrollView>
         <LinearGradient
-          colors={['#2F3A56', '#ABD0DA']}
+          colors={['#E24748', 'white']}
           style={{width: '100%', height: 200, position: 'relative'}}>
           <View
             style={{
