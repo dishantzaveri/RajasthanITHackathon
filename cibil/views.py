@@ -9,25 +9,35 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.generics import GenericAPIView
 from .models import *
 import pandas as pd
+from pandas import json_normalize
+import json
 import joblib
 
 # reading the model:
 
 @csrf_exempt 
-class CibilScore(APIView):
+def CibilScore(request):
+        if request.method == 'GET':
+            sam = {
+                  'status' : 'success',
+                  'data' : "you are hitting GET request so we can not send you your credit score. Try sending POST request."
+            }
+            return JsonResponse(sam)
+        
+        if request.method == 'POST':     
+            loaded_model = joblib.load('ml_model/model.h5')
+            loaded_scalar = joblib.load('ml_model/scalar.h5')
+            data = json.loads(str(request.body, encoding='utf-8'))
+            df2 = json_normalize(data['data'])
+            df2.to_csv('eval.csv', index=False)
+            new_data = pd.read_csv('eval.csv')
+            scal_test = loaded_scalar.transform(new_data.values)
+            pred_new = loaded_model.predict(scal_test)
+            result = str(pred_new[0])
 
-    # def __init__(self, data):
-    #     self.data = data
-
-    def post(self, request):
-        print(request)
-        data = request.body
-        loaded_model = joblib.load('ml_model/model.h5')
-        loaded_scalar = joblib.load('ml_model/scalar.h5')
-        print(data)
-        json_data = pd.read_json(data)
-        new_data = json_data.to_csv('eval.csv')
-        scal_test = loaded_scalar.transform(new_data)
-        pred_new = loaded_model.predict(scal_test)
-
-        return JsonResponse(pred_new)
+            # return JsonResponse(pred_new)
+            sam = {
+                  'status' : 'success',
+                  'data' : result
+            }
+            return JsonResponse(sam)
