@@ -42,7 +42,7 @@ def CibilScore(request):
             elif result == 1:
                  result = random.randint(500,750)
 
-            elif result == 0:
+            elif result == 3:
                  result = random.randint(750,900) 
 
             print(result)
