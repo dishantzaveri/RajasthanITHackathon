@@ -39,7 +39,6 @@ def CibilScore(request):
             print(result)
 
             if result == '0':
-                 print('hi')
                  score = random.randint(150,500) 
 
             elif result == '1':
