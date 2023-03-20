@@ -12,6 +12,7 @@ import pandas as pd
 from pandas import json_normalize
 import json
 import joblib
+import random
 
 # reading the model:
 
@@ -35,9 +36,19 @@ def CibilScore(request):
             pred_new = loaded_model.predict(scal_test)
             result = str(pred_new[0])
 
+            if result == 0:
+                 result = random.randint(150,500) 
+
+            elif result == 1:
+                 result = random.randint(500,750)
+
+            elif result == 0:
+                 result = random.randint(750,900) 
+
+            print(result)
+
             # return JsonResponse(pred_new)
             sam = {
-                  'status' : 'success',
                   'data' : result
             }
             return JsonResponse(sam)
