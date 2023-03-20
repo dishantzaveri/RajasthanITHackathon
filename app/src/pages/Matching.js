@@ -2,7 +2,7 @@ import React from 'react'
 import { SafeAreaView, StyleSheet,TouchableHighlight} from 'react-native'
 import Swiper from 'react-native-deck-swiper'
 import { Card } from '../components/Card'
-import { HomeScreenPics } from '../constants/Pics'
+import { HomeScreenPics } from '../constants2/Pics'
 
 function Matching({navigation}) {
 

@@ -217,7 +217,7 @@ const Profile2 = ({navigation, route}) => {
     var myHeaders = new Headers();
     myHeaders.append(
       'Authorization',
-      'Token 8ee14cbf8c09c0baeae939b60041b703ed240e82',
+      'Token 4d449cb253d428c847fbb11fd394a0933811eb85',
     );
     myHeaders.append(
       'Cookie',
@@ -247,7 +247,7 @@ const Profile2 = ({navigation, route}) => {
     var myHeaders = new Headers();
     myHeaders.append(
       'Authorization',
-      'Token 8ee14cbf8c09c0baeae939b60041b703ed240e82',
+      'Token 4d449cb253d428c847fbb11fd394a0933811eb85',
     );
     myHeaders.append(
       'Cookie',

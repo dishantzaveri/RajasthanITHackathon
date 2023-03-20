@@ -30,11 +30,11 @@ function Loan() {
         </View>
       </View>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => {}}>
+      <TouchableOpacity onPress={() => {navigation.navigate('EducationLoan')}}>
       <View style={styles.container2}>
         <View style={styles.col}>
           <View>
-            <TouchableOpacity onPress={() => {}}>
+            <TouchableOpacity onPress={() => {navigation.navigate('EducationLoan')}}>
               <Image
                 source={require('../assets/education.png')}
                 style={styles.image1}
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
   },
   container2: {
-    width: 370,
+    width: 340,
     height: 150,
     backgroundColor: '#E24748',
     marginLeft: 29,

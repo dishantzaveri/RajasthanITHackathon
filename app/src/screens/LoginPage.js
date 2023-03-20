@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
     alignItems: 'center',
+    width: '100%',
   },
   textStyle: {
     color: 'black',

@@ -4,14 +4,12 @@ import heart from "../assets/icons/heart.png";
 import left from "../assets/icons/left.png";
 import search from "../assets/icons/search.png";
 
-import logo from "../assets/images/logo.jpeg";
-import nft01 from "../assets/images/nft01.png";
-import nft02 from "../assets/images/nft02.jpeg";
-import nft03 from "../assets/images/nft03.jpeg";
-import nft04 from "../assets/images/nft04.jpeg";
-import nft05 from "../assets/images/nft05.jpeg";
-import nft06 from "../assets/images/nft06.jpeg";
-import nft07 from "../assets/images/nft07.jpeg";
+import logo from "../assets/mp.png";
+import nft01 from "../assets/images/art1.jpeg";
+import nft02 from "../assets/images/art2.jpeg";
+import nft03 from "../assets/images/art3.jpeg";
+import nft04 from "../assets/images/art4.jpeg";
+import nft05 from "../assets/images/art5.jpeg";
 
 import person01 from "../assets/images/person01.png";
 import person02 from "../assets/images/person02.png";
@@ -31,8 +29,6 @@ export default {
   nft03,
   nft04,
   nft05,
-  nft06,
-  nft07,
 
   person01,
   person02,

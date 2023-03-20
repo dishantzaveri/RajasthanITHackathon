@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
     marginLeft: wp('10%'),
   },
   button: {
-    backgroundColor: '#0065ff',
+    backgroundColor: '#E24748',
     margin: 10,
     padding: 10,
     borderRadius: 10,

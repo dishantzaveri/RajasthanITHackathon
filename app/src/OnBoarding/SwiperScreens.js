@@ -169,22 +169,23 @@ const SwiperScreens = ({navigation}) => {
   return (
     <Swiper
       loop={false}
-      dot={
-        <View
-          style={{
-            ...styles.dot,
-            backgroundColor: 'white',
-          }}
-        />
-      }
-      activeDot={
-        <View
-          style={{
-            ...styles.dot,
-            backgroundColor: colors.secondary,
-          }}
-        />
-      }>
+      // dot={
+      //   <View
+      //     style={{
+      //       ...styles.dot,
+      //       backgroundColor: 'white',
+      //     }}
+      //   />
+      // }
+      // activeDot={
+      //   <View
+      //     style={{
+      //       ...styles.dot,
+      //       backgroundColor: colors.secondary,
+      //     }}
+      //   />
+      // }
+      >
       <LearnScreen />
       <CreateScreen />
       <ConnectScreen />
@@ -248,11 +249,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   signupTextStyle: {
-    color: '#0065ff',
+    color: '#E24748',
     fontSize: 18,
   },
   button: {
-    backgroundColor: '#0065ff',
+    backgroundColor: '#E24748',
     marginHorizontal: 25,
     padding: 10,
     borderRadius: 10,
@@ -268,7 +269,7 @@ const styles = StyleSheet.create({
 
     width: 100,
     alignItems: 'center',
-    borderColor: '#0065ff',
+    borderColor: '#E24748',
     borderWidth: 1,
   },
 });

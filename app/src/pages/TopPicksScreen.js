@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView, StyleSheet, View ,SafeAreaView} from 'react-native'
 import { Text, Tile } from 'react-native-elements'
-import { TopPicksScreenPics } from '../constants/Pics'
+import { TopPicksScreenPics } from '../constants2/Pics'
 
 function TopPicksScreen({navigation}) {
 

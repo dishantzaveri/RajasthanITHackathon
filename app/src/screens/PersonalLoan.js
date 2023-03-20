@@ -131,10 +131,10 @@ const styles = StyleSheet.create({
     marginTop: 40,
   },
   container2: {
-    width: 110,
+    width: 100,
     height: 120,
     backgroundColor: '#FFFFFF',
-    marginLeft: 25,
+    marginLeft: 23,
     marginTop: 10,
     borderRadius: 8,
     elevation: 10

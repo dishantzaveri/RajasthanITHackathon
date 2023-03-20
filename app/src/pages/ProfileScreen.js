@@ -1,8 +1,8 @@
 import React from 'react'
 import { Image, SafeAreaView, StyleSheet, View } from 'react-native'
 import { Divider, Icon, Text } from 'react-native-elements'
-import Layout from '../constants/Layout'
-import { HomeScreenPics } from '../constants/Pics'
+import Layout from '../constants2/Layout'
+import { HomeScreenPics } from '../constants2/Pics'
 import { randomNo } from '../utils/randomNo'
 
 const { pic, title } = HomeScreenPics[randomNo(1, HomeScreenPics.length)]

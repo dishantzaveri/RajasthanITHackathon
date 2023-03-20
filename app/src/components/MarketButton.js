@@ -1,7 +1,7 @@
 import React from "react";
 import { TouchableOpacity, Text, Image } from "react-native";
 
-import { COLORS, SIZES, FONTS, SHADOWS } from "../constants";
+import { COLORS, SIZES, FONTS, SHADOWS } from "../constants2";
 
 export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
   return (

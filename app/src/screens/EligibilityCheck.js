@@ -36,7 +36,7 @@ function EligibilityCheck() {
         <View style={{flexDirection: 'row'}}>
           <View>
             <Image
-              source={require('../assets/short.jpeg')}
+              source={require('../assets/salarieduser.png')}
               style={styles.image}
             />
             <Text
@@ -51,7 +51,7 @@ function EligibilityCheck() {
           </View>
           <View>
             <Image
-              source={require('../assets/short.jpeg')}
+              source={require('../assets/selfemployed.png')}
               style={styles.image}
             />
             <Text
@@ -143,11 +143,10 @@ const styles = StyleSheet.create({
     elevation: 25,
   },
   image: {
-    marginTop: 20,
-    marginLeft: 15,
+    margin: 22,
     alignSelf: 'center',
     height: 150,
-    width: 200,
+    width: 150,
     resizeMode: 'contain',
   },
   inputContainer: {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Platform, StyleSheet } from 'react-native'
 import { Tile } from 'react-native-elements'
-import Layout from '../constants/Layout'
+import Layout from '../constants2/Layout'
 
 const BOTTOM_BAR_HEIGHT = !Platform.isPad ? 29 : 49 
 

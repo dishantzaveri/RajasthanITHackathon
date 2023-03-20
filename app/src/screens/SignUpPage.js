@@ -48,7 +48,7 @@ function SignUpPage() {
       <TextInputComponent
         marginTop={25}
         iconShape="card"
-        placeholder="Pancard Number"
+        placeholder="Pancard"
         autoComplete="name"
         value={pancard}
         onChangeText={text => {

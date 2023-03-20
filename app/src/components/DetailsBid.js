@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image } from "react-native";
 
 import { EthPrice } from "./SubInfo";
-import { COLORS, SIZES, FONTS } from "../constants";
+import { COLORS, SIZES, FONTS } from "../constants2";
 
 const DetailsBid = ({ bid }) => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Colors from '../constants/Colors'
+import Colors from '../constants2/Colors'
 
 export default class TabBarIcon extends React.Component {
   render() {

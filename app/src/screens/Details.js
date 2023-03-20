@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from "react-native";
 
-import { COLORS, SIZES, assets, SHADOWS, FONTS } from "../constants";
+import { COLORS, SIZES, assets, SHADOWS, FONTS } from "../constants2";
 import { CircleButton, RectButton, SubInfo, DetailsDesc, DetailsBid, FocusedStatusBar } from "../components";
 
 const DetailsHeader = ({ data, navigation }) => (

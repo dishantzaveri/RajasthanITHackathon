@@ -29,6 +29,8 @@ import EligibilityCheck from '../screens/EligibilityCheck';
 import Home from '../screens/Home';
 import Details from '../screens/Details';
 import MainBottomTab from '../screens/MainBottomTab';
+import Alert from '../screens/Alert';
+import EducationLoan from '../screens/EducationLoan';
 
 const Stack = createNativeStackNavigator();
 const OnboardingStack = createNativeStackNavigator();
@@ -164,8 +166,14 @@ const AuthStack = () => {
           component={EligibilityCheck}
           options={{headerShown: false}}
         ></Stack.Screen>
+        <Stack.Screen
+          name="EducationLoan"
+          component={EducationLoan}
+          options={{headerShown: false}}
+        ></Stack.Screen>
         <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
         <Stack.Screen name="Details" component={Details} options={{headerShown: false}}/>
+        <Stack.Screen name="Alert" component={Alert} options={{headerShown: false}}/>
 
     </Stack.Navigator>
   );

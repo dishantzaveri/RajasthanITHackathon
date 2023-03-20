@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, TextInput } from "react-native";
 
-import { COLORS, FONTS, SIZES, assets } from "../constants";
+import { COLORS, FONTS, SIZES, assets } from "../constants2";
 
 const HomeHeader = ({ onSearch }) => {
   return (
@@ -18,19 +18,19 @@ const HomeHeader = ({ onSearch }) => {
           alignItems: "center",
         }}
       >
-        <Image
+        {/* <Image
           source={assets.logo}
           resizeMode="contain"
-          style={{ width: 100, height: 40 }}
-        />
+          style={{ width: 200, height: 100 }}
+        /> */}
 
-        <View style={{ width: 45, height: 45 }}>
-          <Image
+        {/* <View style={{ width: 45, height: 45 }}> */}
+          {/* <Image
             source={assets.person01}
             resizeMode="contain"
             style={{ width: "100%", height: "100%" }}
-          />
-          <Image
+          /> */}
+          {/* <Image
             source={assets.badge}
             resizeMode="contain"
             style={{
@@ -40,8 +40,8 @@ const HomeHeader = ({ onSearch }) => {
               bottom: 0,
               right: 0,
             }}
-          />
-        </View>
+          /> */}
+        {/* </View> */}
       </View>
 
       <View style={{ marginVertical: SIZES.font }}>
