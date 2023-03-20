@@ -90,7 +90,7 @@ function DrawerAppBar(props) {
               </Button>
           </Box>
           </Link>
-          <Link to="http://localhost:3000/loading">
+          <Link to="http://localhost:3000/credit">
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <Button key={'Credit Report'} sx={{ color: '#2F3A56', float: 'right !important' }}>
                 <b>{'Credit Report'}</b>
