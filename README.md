@@ -19,9 +19,12 @@ npm run ios
 
 # APP PREVIEW
 <img src="https://i.postimg.cc/bJF5mNxR/Whats-App-Image-2023-03-21-at-4-01-48-AM.jpg" width = "250">
-[![Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg](https://i.postimg.cc/0QN3GJwQ/Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg)](https://postimg.cc/MchdqHt2)
-[![Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg](https://i.postimg.cc/d3kxpPnc/Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg)](https://postimg.cc/m14j1n0m)
-[![Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg](https://i.postimg.cc/J7SrnRfJ/Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg)](https://postimg.cc/Dmdkp3yy)
+<img src="https://i.postimg.cc/0QN3GJwQ/Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg" width = "250">
+<img src="https://i.postimg.cc/d3kxpPnc/Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg" width = "250">
+<img src="https://i.postimg.cc/J7SrnRfJ/Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg" width = "250">
+<!-- [![Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg](https://i.postimg.cc/0QN3GJwQ/Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg)](https://postimg.cc/MchdqHt2) -->
+<!-- [![Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg](https://i.postimg.cc/d3kxpPnc/Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg)](https://postimg.cc/m14j1n0m) -->
+<!-- [![Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg](https://i.postimg.cc/J7SrnRfJ/Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg)](https://postimg.cc/Dmdkp3yy) -->
 [![Whats-App-Image-2023-03-21-at-4-01-53-AM.jpg](https://i.postimg.cc/dVYJ24tV/Whats-App-Image-2023-03-21-at-4-01-53-AM.jpg)](https://postimg.cc/Mv9kx0QC)
 [![Whats-App-Image-2023-03-21-at-4-01-53-AM-1.jpg](https://i.postimg.cc/PJgRk3Fp/Whats-App-Image-2023-03-21-at-4-01-53-AM-1.jpg)](https://postimg.cc/tnz535bp)
 [![Whats-App-Image-2023-03-21-at-4-01-53-AM-2.jpg](https://i.postimg.cc/9XDXCDnC/Whats-App-Image-2023-03-21-at-4-01-53-AM-2.jpg)](https://postimg.cc/SjpbGx4v)
