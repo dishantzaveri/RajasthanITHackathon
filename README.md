@@ -145,8 +145,8 @@ npm start
 
 # WEBSITE PREVIEW
 <p float="left">
-  <img src="https://i.postimg.cc/XvCHP5bJ/web1.jpg" width = "500" height ="400">
-  <img src="https://i.postimg.cc/SN1gNdQR/web2.jpg" width = "500" height ="400">
+  <img src="https://i.postimg.cc/XvCHP5bJ/web1.jpg" width = "450" height ="400">
+  <img src="https://i.postimg.cc/SN1gNdQR/web2.jpg" width = "450" height ="400">
 </p>
 
 <p float="left">
@@ -155,8 +155,8 @@ npm start
 </p>
 
 <p float="left">
-  <img src="https://i.postimg.cc/yxVLWrSg/web5.jpg" width = "500" height ="400">
-  <img src="https://i.postimg.cc/63VHWNTx/web6.jpg" width = "500" height ="400">
+  <img src="https://i.postimg.cc/yxVLWrSg/web5.jpg" width = "450" height ="400">
+  <img src="https://i.postimg.cc/63VHWNTx/web6.jpg" width = "450" height ="400">
 </p>
 
 <p float="left">
