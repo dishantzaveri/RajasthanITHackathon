@@ -88,12 +88,12 @@ function DrawerAppBar(props) {
               padding: "10px",
             }}
           >
-            <Link to="http://localhost:3000/">
+            <Link to="https://samriddh-bharat.netlify.app/">
               <img src={logo} alt="" />
             </Link>
           </div>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Link to="http://localhost:3000/loans">
+            <Link to="https://samriddh-bharat.netlify.app/loans">
               <Button
                 key={"Loan"}
                 sx={{ color: "#2F3A56", float: "right !important" }}
@@ -102,7 +102,7 @@ function DrawerAppBar(props) {
               </Button>
             </Link>
           </Box>
-          <Link to="http://localhost:3000/insurance">
+          <Link to="https://samriddh-bharat.netlify.app/insurance">
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <Button
                 key={"Insurance"}
@@ -112,7 +112,7 @@ function DrawerAppBar(props) {
               </Button>
             </Box>
           </Link>
-          <Link to="http://localhost:3000/credit">
+          <Link to="https://samriddh-bharat.netlify.app/credit">
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <Button
                 key={"Credit Report"}
