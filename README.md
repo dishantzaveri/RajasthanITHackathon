@@ -205,6 +205,6 @@ The backend will be running on the localhost. Alternatively, we have a hosted ba
 ```
 https://2d2b-117-250-3-86.in.ngrok.io
 ```
-
+ML Models: bit.ly/raj-hack-ml
 
 
