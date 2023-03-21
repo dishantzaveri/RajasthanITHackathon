@@ -24,10 +24,8 @@ npm run ios
 
 # APP PREVIEW
 <p float="left">
-  <img src="https://i.postimg.cc/XvCHP5bJ/web1.jpg" width = "300">
-  <img src="https://i.postimg.cc/ydTPqXrV/web10.jpg" width = "300">
-  <img src="https://i.postimg.cc/J7SrnRfJ/Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg" width = "200">
-  <img src="https://i.postimg.cc/dVYJ24tV/Whats-App-Image-2023-03-21-at-4-01-53-AM.jpg" width = "200">
+  <img src="https://i.postimg.cc/XvCHP5bJ/web1.jpg" width = "350" height ="450">
+  <img src="https://i.postimg.cc/ydTPqXrV/web10.jpg" width = "350" height ="450">
 </p>
 
 <p float="left">
