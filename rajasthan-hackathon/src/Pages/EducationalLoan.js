@@ -68,6 +68,8 @@ const EducationalLoan = () => {
             },
             padding: '15px',
           }}
+          target="_blank"
+          href="https://forms.gle/UQS1aiYaqKneNuzv8"
         >
           Apply Now
           <span>

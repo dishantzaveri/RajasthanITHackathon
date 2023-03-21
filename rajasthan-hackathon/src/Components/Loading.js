@@ -1,8 +1,8 @@
 import logo from '../logo.svg';
 
-export default function Landing() {
+export default function Landing(props) {
   return (
-    <div>
+    <div style={{ display: props.show }}>
       {/* <header className="App-header"> */}
       <img
         src={logo}

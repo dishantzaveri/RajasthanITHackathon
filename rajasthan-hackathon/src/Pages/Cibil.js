@@ -165,6 +165,8 @@ export default function Cibil() {
     { field: "No of Loans", name: "Num_of_Loan" },
   ];
 
+  const [load, setLoad] = React.useState("none")
+
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -176,6 +178,7 @@ export default function Cibil() {
   };
 
   const handleSubmit = (e) => {
+    setLoad("block")
     console.log("submit");
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -278,7 +281,7 @@ export default function Cibil() {
             Your cibil score is {cibil}
           </Typography>
           <RadialBarChart
-            width={1530}
+            width={1500}
             height={350}
             innerRadius="10%"
             outerRadius="80%"
@@ -320,7 +323,7 @@ export default function Cibil() {
           </RadialBarChart>
         </>
       ) : (
-        <Loading />
+        <Loading show={load} />
       )}
     </>
   )

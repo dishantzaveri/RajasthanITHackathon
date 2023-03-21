@@ -173,11 +173,17 @@ function DrawerAppBar(props) {
                 Campaigns
               </MenuItem>
             </Link>
-            {/* <Link to="/marketplace"> */}
-            <MenuItem sx={{ margin: "10px", padding: "10px", width: "140px" }}>
-              Marketplace
-            </MenuItem>
-            {/* </Link> */}
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="http://127.0.0.1:3001/market"
+              target="_blank"
+            >
+              <MenuItem
+                sx={{ margin: "10px", padding: "10px", width: "140px" }}
+              >
+                Marketplace
+              </MenuItem>
+            </Link>
           </Menu>
 
           {/* </div> */}
