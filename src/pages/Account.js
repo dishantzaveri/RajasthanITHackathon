@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { useGetProfileQuery } from "../features/profile/profileAPISlice";
 import Header from "../components/Header/Header";
 import { Box, Modal } from "@mui/material/node";
+import CreateCampaigns from "../CreateCampaigns/CreateCampaigns";
 import { useGetStartupsQuery } from "../features/gst/gstAPISlice";
 import { Link } from "react-router-dom";
 const style = {
@@ -110,7 +111,6 @@ const EditStartup = ({ data }) => {
 const Account = () => {
   const { is_entrepreneur, email } = useSelector((state) => state.auth);
   const [experience, setExperience] = useState();
-  const [education, setEducation] = useState();
   const { data, isLoading, error } = useGetProfileQuery(
     is_entrepreneur ? "entrepreneur" : "mentor"
   );
@@ -134,14 +134,6 @@ const Account = () => {
       .then((result) => {
         console.log(result);
         setExperience(result);
-      })
-      .catch((error) => console.log("error", error));
-
-    fetch("http://127.0.0.1:8000/account/education", requestOptions)
-      .then((response) => response.json())
-      .then((result2) => {
-        console.log(result2);
-        setEducation(result2)
       })
       .catch((error) => console.log("error", error));
     console.log(data, startups);
@@ -215,17 +207,17 @@ const Account = () => {
               </div>
               <div className="mt-4">
                 <p className="font-semibold text-base">Education : </p>
-                {education?.map((edu) => (
+                {data?.education?.map((edu) => (
                   <>
                     <p>
                       <span className="font-semibold">College</span> :{" "}
                       {edu.institute}
                     </p>
-                    {/* <p>
+                    <p>
                       <span className="font-semibold">Year</span> :{" "}
                       {edu.start_date.split("-")[0]} -{" "}
                       {edu.end_date.split("-")[0]}
-                    </p> */}
+                    </p>
                     <p>
                       <span className="font-semibold">Course</span> :{" "}
                       {edu.degree} in {edu.study_field}

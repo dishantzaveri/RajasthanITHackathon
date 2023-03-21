@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import SearchIcon from "@material-ui/icons/Search";
+import Navbar from "../components/Navbar";
+import MentorsList from "../components/MentorsList/MentorsList";
+import SearchBar from "material-ui-search-bar";
+import { Grid } from "@mui/material/node";
+import SideNavbar from "../components/SideNavbar/SideNavbar";
+import { useGetMentorsListQuery } from "../features/list/listAPISlice";
+import { VscLoading } from "react-icons/vsc";
 import Header from "../components/Header/Header";
 import axios from "axios";
 import Location from "@material-ui/icons/LocationOnOutlined";
@@ -15,7 +23,6 @@ const Mentor = ({ mentor }) => {
               ? `http://127.0.0.1:8000/${mentor.profile_pic}`
               : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png"
           }
-          alt="mentor"
           style={{
             objectFit: "contain",
             borderRadius: 100,
@@ -57,6 +64,7 @@ const Mentor = ({ mentor }) => {
 };
 
 export default function Mentors() {
+  const { data, isLoading } = useGetMentorsListQuery();
   const { token } = useSelector((state) => state.auth);
   const [mentors, setMentors] = useState([]);
   const [expertise, setExpertise] = useState("");
