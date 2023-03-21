@@ -19,7 +19,7 @@ npm run ios
 
 <hr>
 # APP DOWNLOAD LINK:
-<a gref="https://drive.google.com/file/d/1Ri6lGCPsFP-MNv_L2ek6FVMtSXlWzLHc/view?usp=sharing">click here to download</a>
+<a href="https://drive.google.com/file/d/1Ri6lGCPsFP-MNv_L2ek6FVMtSXlWzLHc/view?usp=sharing">click here to download</a>
 <hr>
 
 # APP PREVIEW
