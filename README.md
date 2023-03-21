@@ -62,6 +62,7 @@ npm run ios
   <img src="https://i.postimg.cc/rFvk8gt9/Whats-App-Image-2023-03-21-at-4-01-59-AM.jpg" width = "200">
   <img src="https://i.postimg.cc/jjh04b38/Whats-App-Image-2023-03-21-at-4-01-59-AM-1.jpg" width = "200">
   <img src="https://i.postimg.cc/B6QWhVdJ/Whats-App-Image-2023-03-21-at-4-02-00-AM.jpg" width = "200">
+  <img src="https://i.postimg.cc/cLQVdWWs/Whats-App-Image-2023-03-21-at-4-02-03-AM-2.jpg" width = "200">
 </p>
 
 <p float="left">
@@ -72,14 +73,9 @@ npm run ios
 </p>
 
 <p float="left">
-  <img src="https://i.postimg.cc/SR3wxNjK/Whats-App-Image-2023-03-21-at-4-02-02-AM.jpg" width = "200">
+  <img src="https://i.postimg.cc/7YJFQ7QJ/Whats-App-Image-2023-03-21-at-4-02-03-AM-1.jpg" width = "200">
   <img src="https://i.postimg.cc/QdL2LtR4/Whats-App-Image-2023-03-21-at-4-02-02-AM-1.jpg" width = "200">
   <img src="https://i.postimg.cc/sfLFcKKR/Whats-App-Image-2023-03-21-at-4-02-02-AM-2.jpg" width = "200">
   <img src="https://i.postimg.cc/Gpd62f3v/Whats-App-Image-2023-03-21-at-4-02-03-AM.jpg" width = "200">
-</p>
-
-<p float="left">
-  <img src="https://i.postimg.cc/7YJFQ7QJ/Whats-App-Image-2023-03-21-at-4-02-03-AM-1.jpg" width = "200">
-  <img src="https://i.postimg.cc/cLQVdWWs/Whats-App-Image-2023-03-21-at-4-02-03-AM-2.jpg" width = "200">
 </p>
 
