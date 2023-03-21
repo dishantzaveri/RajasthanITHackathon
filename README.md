@@ -17,6 +17,11 @@ npm i
 npm run ios
 ```
 
+<hr>
+# APP DOWNLOAD LINK:
+https://drive.google.com/file/d/1Ri6lGCPsFP-MNv_L2ek6FVMtSXlWzLHc/view?usp=sharing
+<hr>
+
 # APP PREVIEW
 <p float="left">
   <img src="https://i.postimg.cc/bJF5mNxR/Whats-App-Image-2023-03-21-at-4-01-48-AM.jpg" width = "230">
