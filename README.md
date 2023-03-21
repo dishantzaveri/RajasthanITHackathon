@@ -19,13 +19,13 @@ npm run ios
 
 <hr>
 # APP DOWNLOAD LINK:
-<a href="https://drive.google.com/file/d/1Ri6lGCPsFP-MNv_L2ek6FVMtSXlWzLHc/view?usp=sharing" target="_blank">click here to download</a>
+<a href="https://samriddh-bharat.netlify.app" target="_blank">Click here to view the website</a>
 <hr>
 
 # APP PREVIEW
 <p float="left">
-  <img src="https://i.postimg.cc/0QN3GJwQ/Whats-App-Image-2023-03-21-at-4-01-48-AM-1.jpg" width = "200">
-  <img src="https://i.postimg.cc/d3kxpPnc/Whats-App-Image-2023-03-21-at-4-01-50-AM.jpg" width = "200">
+  <img src="https://i.postimg.cc/XvCHP5bJ/web1.jpg" width = "300">
+  <img src="https://i.postimg.cc/ydTPqXrV/web10.jpg" width = "300">
   <img src="https://i.postimg.cc/J7SrnRfJ/Whats-App-Image-2023-03-21-at-4-01-51-AM.jpg" width = "200">
   <img src="https://i.postimg.cc/dVYJ24tV/Whats-App-Image-2023-03-21-at-4-01-53-AM.jpg" width = "200">
 </p>
