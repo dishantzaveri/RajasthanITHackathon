@@ -44,7 +44,6 @@ def CibilScore(request):
             elif result == '2':
                  score = random.randint(750,900) 
 
-            # return JsonResponse(pred_new)
             sam = {
                   'data' : score
             }
